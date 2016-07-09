@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Wikipedia Search App</title>
+    <!--Char and Device Viewport Settings-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--jQuery CDN Link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--Javascript Link-->
+    <script type="text/javascript" src="#"></script>
+    <!--CSS Link-->
+    <link rel="stylesheet" type="text/css" href="wiki.css">
+</head>
+<!--Javascript-->
+<script type="text/javascript" src="wiki.js"></script>
+<body>
+    <div class="container" id="bigbox">
+        <h1 class="text-center">Wikipedia Search</h1>
+        <p class="text-center">
+        </p>
+        <div class="container" id="forms">
+            <!--Search Bar / Text Form-->
+            <input type="text" id="search" autocomplete="off" placeholder="Type something...">
+        </div>
+        <br>
+        <br>
+        <!--Random Search Button-->
+        <a href='https://en.wikipedia.org/wiki/Special:Random' target="_blank">
+            <button class="btn btn-primary">Random Search!</button>
+        </a>
+    </div>
+    <!--Results Div-->
+    <div id="results">
+    </div>
+    <footer class="text-center">Coded by <a href="http://www.drewcodes.io">drewcodes</a></footer>
+</body>
+</html>
