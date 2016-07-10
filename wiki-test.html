@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Wikipedia Search App</title>
+    <!--Char and Device Viewport Settings-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--jQuery CDN Link-->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!--Javascript Link-->
+    <script type="text/javascript">
+        
+$(document).ready();
+function searchWiki(request) {
+  var api = 'http://en.wikipedia.org/w/api.php?action=opensearch&search='+request.term+'&limit=10&namespace=0&format=json&callback=?';
+  $.getJSON(api, function (data) {
+    $("#results").html("");
+    for(var i = 0; i < data[1].length; i++) {
+      $("#results").append(
+        "<a href='"+data[3][i]+"' target='_blank'><div class='searchresult fadeMe noshow'><h4>"+data[1][i]+"</h4><p>"+data[2][i]+"</p></div></a>"
+      )
+    }
+  });
+}
+$( "#search" ).autocomplete({
+  source: searchWiki,
+});
+
+    </script>
+    
+</head>
+<body>
+    <div class="container" id="bigbox">
+        <h1 class="text-center">Wikipedia Search</h1>
+        <p class="text-center">
+            <p>
+                <div class="container" id="forms">
+                    <!--Search Bar / Text Form-->
+                    <input type="text" id="search" autocomplete="off" placeholder="Type something...">
+                    <br>
+                    <br>
+                    <!--Random Search Button-->
+                    <a href='https://en.wikipedia.org/wiki/Special:Random' target="_blank">
+                        <button class="btn btn-primary">Random Search!</button>
+                    </a>
+                </div>
+                <!--Results Div-->
+                <div id="results">
+                </div>
+    </div>
+    <footer class="text-center">Coded by <a href="http://www.drewcodes.io">drewcodes</a></footer>
+</body>
+</html>
