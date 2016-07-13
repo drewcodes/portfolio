@@ -1,7 +1,11 @@
 body {
-    background-color: white;
+    background-color: #ffffff;
     color: black;
     font-family: Muli;
+}
+
+h1 {
+    color: #ff8900;
 }
 
 #searchBox {
