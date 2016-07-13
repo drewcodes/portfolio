@@ -21,14 +21,14 @@ p {
 }
 
 .weatherbox {
-  background-color: #b30000;
-  height: 500px;
-  width: 275px;
+  background-color: rgba(179, 0, 0, 0.55);
+  height: 550px;
+  max-width: 475px;
   border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
+    margin: auto;
   font-size: 15px;
   padding: 20px;
+    display: block;
 }
 
 .weatherType {
