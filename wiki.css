@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Muli;
+}
+
+#searchBox {
+    background-color: #ffb236;
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 300px;
+    padding: 30px;
+}
+
+.search-wiki {
+    height: 100px;
+}
+
+ul > li {
+    font-family: Tahoma;
+    font-size: 13px;
+    list-style: none;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    border-width: 5px;
+    border-color: #ff9300;
+    border-style: solid;
+    margin-left: -40px;
+}
+
+ul>li>a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer {
+    margin-bottom: 10px;
+}
+
