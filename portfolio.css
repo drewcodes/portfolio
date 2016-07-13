@@ -52,6 +52,8 @@ body {
     background-size: cover;
     color: white;
     height: 625px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .profile-pic-section {
@@ -79,6 +81,13 @@ body {
 
 #languages {
     font-size: 18px;
+}
+
+/*About Section*/
+.about {
+    background-color: white;
+    color: black;
+    padding: 25px;
 }
 
 /*Contact Section*/
