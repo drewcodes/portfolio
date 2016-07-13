@@ -1,36 +1,40 @@
+body {
+    background-color: #242424;
+    color: black;
+}
+
 .main-box {
-	height: auto;
-	margin-top: 50px;
-  margin-bottom:50px;
-	width: 275px;
-	background-color: #3377ff;
-	padding: 20px;
-  border-radius: 10px;
+    max-width: 550px;
+    background-color: #376bf8;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px;
 }
 
 .author {
-  font-weight: bold;
-  font-size: 16px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .quote-machine {
-	padding:20px;
-	font-family: Avenir;
-	color: white;
-}
-
-body {
-	background-color: #00091a;
+    padding: 20px;
+    font-family: Avenir;
+    color: white;
 }
 
 .quotes {
-	background-color: white;
-	height:auto;
-	width:auto;
-	padding: 20px;
+    background-color: white;
+    height: auto;
+    width: auto;
+    padding: 20px;
 }
 
 footer {
-	color:white;
-	font-family: tahoma;
+    padding: 10px;
+    font-family: tahoma;
+    color: white;
+}
+footer > a {
+    color: white;
+    text-decoration: none;
 }
