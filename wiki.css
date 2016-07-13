@@ -9,9 +9,13 @@ h1 {
 }
 
 #searchBox {
-    margin-top: 50px;
+    margin-top: 30px;
     max-width: 600px;
     padding: 30px;
+}
+
+.searchBoxes {
+    padding: 20px;
 }
 
 .search-wiki {
