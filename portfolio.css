@@ -51,7 +51,7 @@ body {
     background: linear-gradient(rgba(39, 220, 255, 0.6), rgba(224, 219, 71, 0.6)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/wnFor7h6H87ukwNUmBXZrh9yCgKCuJEpT1bcGcqrkORkUAmCo-UsYpbQ4zEEHPOhFI4Wj8VLTP0uNdvbSu_GedO5ZEilr-AYXO4nMT1bYRDyD3U6T1wyp-s68NQojyQdIPofpU7jQWZs4sslvSInSd9rvBFE3tddZw509dYVLQ8FwzhPNUZPDytDlBp2w1UlxSK0I2_-DbXK4p7XjfFgY9KfchEfwRzsQf2IYHp51Uq4WZ1-I7uFQM9OvfMqvkrDVKNm_5cHmZk_6pJ7Q483t7_r3l8nMSzHHI5tMwihzVPAANHGngYSn-PbYCkBvzUezKoUNlOM8_2_-lSHN57StSt_fOZZMcOp4VzdMPOuOfQ3J3nG4ZAz9s4kY6oZn5XsycumdfA29aTZDQiWQy0eRUN5WV8-dl1fzc7GwncybE8eC_TXOwWLlWFzynqRB8AL5PWMuDGqH1zB51-d3PTEvSpgwdue13yjt6uao7susQvuiRIMhtIvTa9AkA9Ry-QQgUJ-FnM7OgZXugFSWEz9_9XtzgYnxN-Lugv5HKWn-8ml8KicvQSMi8JbLPwxmXyhuylWRGRofGGEH4Q1r-ErsXi9tb9tRQ=w960-h529-no?.jpeg') no-repeat center;
     background-size: cover;
     color: white;
-    height: 625px;
+    height: 655px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -74,7 +74,7 @@ body {
     margin: auto;
     height: 100%;
     width: 100%;
-    box-shadow: 10px 10px 5px #888888;
+    border: 1px solid #adadad;
     margin-top: 20px;
     margin-bottom: 12px;
 }
@@ -95,6 +95,7 @@ body {
     padding: 25px;
     background-color: #2f2f2f;
     color: white;
+    height: 625px;
     padding-bottom: 50px;
     /*Bottom padding of the site*/
 }
@@ -132,4 +133,8 @@ body {
 .drewsite-footer > a {
     color: white;
     text-decoration: none;
+}
+
+.google-font {
+    font-family: Shrikhand;
 }
