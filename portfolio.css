@@ -84,12 +84,17 @@ body {
     font-size: 18px;
 }
 
+/*About Section*/
+.about {
+    padding: 25px;
+}
+
 /*Contact Section*/
 .contact {
     padding: 65px;
     background-color: #1c1c1c;
     color: white;
-    height: 600px;
+    height: 655px;
     padding-bottom: 50px;
     /*Bottom padding of the site*/
 }
@@ -146,19 +151,7 @@ body {
     width: 300px;
 }
 
-.drewsite-footer {
-    padding: 20px;
-}
-
-.footer {
-    background-color: #2f2f2f;
-    color: white;
-}
-
-.drewsite-footer > a {
-    color: white;
-    text-decoration: none;
-}
+/*Misc Font Stylings*/
 
 .google-font {
     font-family: Fjalla One;
@@ -170,4 +163,9 @@ body {
 
 .orange-text {
     color: darkorange;
+}
+
+#contact-icons {
+    width: 270px;
+    padding-left: 10px;
 }
