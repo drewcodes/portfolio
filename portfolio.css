@@ -43,7 +43,6 @@ body {
     padding-top: 50px;
     color: white;
     height: 500px;
-    
 }
 
 
@@ -61,8 +60,6 @@ body {
     float: right;
     border-radius: 20px;
     width: 550px;
-    
-    
 }
 }
 
@@ -79,7 +76,7 @@ body {
 
 /*About*/
 .about {
-   background: linear-gradient(rgba(255, 255, 255, 0.85), rgb(234, 234, 234)), rgba(0, 0, 0, 0.51);
+   background: linear-gradient(rgba(255, 255, 255, 0.85), rgb(234, 234, 234)), rgba(0, 0, 0, 0.51); 
 }
 
 .about-section {
@@ -96,6 +93,9 @@ body {
     height: 100px;
     width: 100px;
     box-shadow: 5px 5px 10px black;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /*Portfolio Section*/
