@@ -61,7 +61,6 @@ body {
     float: right;
     border-radius: 20px;
     width: 550px;
-    margin-right: -20px;
     
     
 }
@@ -88,6 +87,7 @@ body {
     margin-right: auto;
     padding-top: 10px;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 .about-img {
