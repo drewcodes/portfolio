@@ -43,30 +43,38 @@ body {
     padding-top: 50px;
     color: white;
     height: 500px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-shadow: 2px 2px black;
+    
 }
 
 
 .welcome-bg {
-    background: linear-gradient(rgba(255, 255, 255, 0.15), hsl(0, 0%, 0%)), rgba(0, 0, 0, 0.51) url('http://images.freeimages.com/images/previews/c31/colors-1383652.jpg') no-repeat center;
+    background: linear-gradient(rgba(255, 255, 255, 0.15), hsl(0, 0%, 0%)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/vH9qTyAriOQqTWvzxnwLeNw1Jz28A9fxo-BufZYva4iXML64ppeLdM7im46ZqTbof8lX-Xlq-OEzPCHSnLtAiyM8qY7u4NAhMKlNafzBQ3PRTYr1vNulgScDIcdHKJFtKoQw7uIRaT-pTUYUfGD_3j5IkYqr7ZxBXIAvFwLMHnY_PWsrA3tYCVwjHrDMP1m82XaGNdF1H7JR4qx7jkZI1bhQD4Gwo8lsJ_7n7HyFyQyHhum-ByC0T4bP-cY9UH6PxKL6qKeoP1YjnkVMp10OaRzfNBlpjbNxOuqdtURzio97jel4yNcrkhYg1r6durpCI9PPDaOJHnRDgIMjN-88mPjpEpe6bwLc4mev9fcAAbX3eiOU1gR3RKbkX6tzC_QDaNk1UofcYQcvLWqP4JzGW3CRlyVhlG_emnO-8utXojIYOBPWvsj8BtiTfp_pQJaxMHiPQTaGv3G32POc3x89gAOx0zzc1_gMwRJonV7clk_T2T68FON9lZRHD_qlz3qKtjIPf2NvHDQKUdLtl-TEKELZJ5omhTOQ5fSv27BxcZUeIc0Pur8vFWustwFpHzZyBUdZ8dtzX6Ggb4TffapywNYRhyL9Wv8=w667-h439-no?.jpg') no-repeat center;
     background-size: cover;
 }
 
 @media (min-width: 768px){
-.message{
+.welcome-msg{
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 180px;
+    padding: 20px;
     float: right;
-    margin-top: 250px;
+    border-radius: 20px;
+    width: 550px;
+    margin-right: -20px;
+    
     
 }
 }
 
 @media (max-width: 767px) {
-    .message {
-        padding: 10px;
-        vertical-align: bottom;
-}
+    .welcome-msg {
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+    }
 }
 
 
