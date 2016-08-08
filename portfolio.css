@@ -56,21 +56,20 @@ body {
     text-shadow: 2px 2px black;
 }
 
-/*.welcome-msg {
-    height: 300px;
-    background-color: black;
-}*/
-
-
 @media (min-width: 768px){
 .message{
-    float: right;    
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 25px;
+    
 }
 }
 
 @media (max-width: 767px) {
     .message {
-       text-align: center;
+        padding: 10px;
+        vertical-align: middle;
 }
 }
 
@@ -78,11 +77,6 @@ body {
 .welcome-bg {
     background: linear-gradient(rgba(255, 255, 255, 0.15), hsl(0, 0%, 0%)), rgba(0, 0, 0, 0.51) url('http://images.freeimages.com/images/previews/c31/colors-1383652.jpg') no-repeat center;
     background-size: cover;
-}
-
-.profile-pic-section {
-    margin-top: 20px;
-    height: 300px;
 }
 
 /*About*/
