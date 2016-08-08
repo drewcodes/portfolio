@@ -38,39 +38,14 @@ body {
 }
 
 /*Welcome Message Section*/
-.profile-pic {
-    max-width: 250px;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(255, 255, 255);
-    margin: auto;
-}
 
 .welcome {
     padding-top: 50px;
     color: white;
-    height: 655px;
+    height: 500px;
     padding-left: 10px;
     padding-right: 10px;
     text-shadow: 2px 2px black;
-}
-
-@media (min-width: 768px){
-.message{
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    padding: 25px;
-    
-}
-}
-
-@media (max-width: 767px) {
-    .message {
-        padding: 10px;
-        vertical-align: middle;
-}
 }
 
 
@@ -78,6 +53,22 @@ body {
     background: linear-gradient(rgba(255, 255, 255, 0.15), hsl(0, 0%, 0%)), rgba(0, 0, 0, 0.51) url('http://images.freeimages.com/images/previews/c31/colors-1383652.jpg') no-repeat center;
     background-size: cover;
 }
+
+@media (min-width: 768px){
+.message{
+    float: right;
+    margin-top: 250px;
+    
+}
+}
+
+@media (max-width: 767px) {
+    .message {
+        padding: 10px;
+        vertical-align: bottom;
+}
+}
+
 
 /*About*/
 .about {
