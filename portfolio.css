@@ -5,7 +5,9 @@ body {
     color: black;
 }
 
+
 /*Nav Styling*/
+
 .navbar {
     background-color: #2f2f2f;
     color: white;
@@ -37,6 +39,7 @@ body {
     font-size: 25px;
 }
 
+
 /*Welcome Message Section*/
 
 .welcome {
@@ -45,42 +48,42 @@ body {
     height: 500px;
 }
 
-
 .welcome-bg {
     background: linear-gradient(rgba(255, 255, 255, 0.15), hsl(0, 0%, 0%)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/vH9qTyAriOQqTWvzxnwLeNw1Jz28A9fxo-BufZYva4iXML64ppeLdM7im46ZqTbof8lX-Xlq-OEzPCHSnLtAiyM8qY7u4NAhMKlNafzBQ3PRTYr1vNulgScDIcdHKJFtKoQw7uIRaT-pTUYUfGD_3j5IkYqr7ZxBXIAvFwLMHnY_PWsrA3tYCVwjHrDMP1m82XaGNdF1H7JR4qx7jkZI1bhQD4Gwo8lsJ_7n7HyFyQyHhum-ByC0T4bP-cY9UH6PxKL6qKeoP1YjnkVMp10OaRzfNBlpjbNxOuqdtURzio97jel4yNcrkhYg1r6durpCI9PPDaOJHnRDgIMjN-88mPjpEpe6bwLc4mev9fcAAbX3eiOU1gR3RKbkX6tzC_QDaNk1UofcYQcvLWqP4JzGW3CRlyVhlG_emnO-8utXojIYOBPWvsj8BtiTfp_pQJaxMHiPQTaGv3G32POc3x89gAOx0zzc1_gMwRJonV7clk_T2T68FON9lZRHD_qlz3qKtjIPf2NvHDQKUdLtl-TEKELZJ5omhTOQ5fSv27BxcZUeIc0Pur8vFWustwFpHzZyBUdZ8dtzX6Ggb4TffapywNYRhyL9Wv8=w667-h439-no?.jpg') no-repeat center;
     background-size: cover;
 }
 
-@media (min-width: 768px){
-.welcome-msg{
-    color: white;
-    text-shadow: 2px 2px black;
-    margin-top: 180px;
-    padding: 20px;
-    float: right;
-    border-radius: 20px;
-    width: 550px;
-}
+@media (min-width: 768px) {
+    .welcome-msg {
+        color: white;
+        text-shadow: 2px 2px black;
+        margin-top: 180px;
+        padding: 20px;
+        float: right;
+        border-radius: 20px;
+        width: 550px;
+    }
 }
 
 @media (max-width: 767px) {
     .welcome-msg {
-    color: white;
-    text-shadow: 2px 2px black;
-    margin-top: 120px;
-    padding: 20px;
-    text-align: center;
+        color: white;
+        text-shadow: 2px 2px black;
+        margin-top: 120px;
+        padding: 20px;
+        text-align: center;
     }
 }
 
 
 /*About*/
+
 .about {
-   background: linear-gradient(rgba(255, 255, 255, 0.85), rgb(234, 234, 234)), rgba(0, 0, 0, 0.51); 
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgb(234, 234, 234)), rgba(0, 0, 0, 0.51);
 }
 
 .about-section {
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -101,59 +104,60 @@ body {
     margin-top: 20px;
 }
 
-
-@media(max-width:909px){
+@media(max-width:909px) {
     .about-img {
-    height: 150px;
-    width: 150px;
-    box-shadow: 5px 5px 10px black;
-    margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    vertical-align: center;
-}
-}
-
-@media(max-width:808px){
-    .about-img {
-    height: 110px;
-    width: 110px;
-    box-shadow: 5px 5px 10px black;
-    margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-}
-
-@media(max-width:622px){
-    .about-img {
-    height: 110px;
-    width: 110px;
-    box-shadow: 5px 5px 10px black;
-    margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-    .img-section {
-        width:350px;
+        height: 150px;
+        width: 150px;
+        box-shadow: 5px 5px 10px black;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        vertical-align: center;
     }
 }
 
-@media(max-width:582px){
+@media(max-width:808px) {
     .about-img {
-    height: 110px;
-    width: 110px;
-    box-shadow: 5px 5px 10px black;
-    margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-    .img-section {
-        width:350px;
+        height: 110px;
+        width: 110px;
+        box-shadow: 5px 5px 10px black;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
+
+@media(max-width:622px) {
+    .about-img {
+        height: 110px;
+        width: 110px;
+        box-shadow: 5px 5px 10px black;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .img-section {
+        width: 350px;
+    }
+}
+
+@media(max-width:582px) {
+    .about-img {
+        height: 110px;
+        width: 110px;
+        box-shadow: 5px 5px 10px black;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .img-section {
+        width: 350px;
+    }
+}
+
 
 /*Portfolio Section*/
+
 .portfolio {
     padding: 25px;
 }
@@ -172,12 +176,16 @@ body {
     font-size: 18px;
 }
 
+
 /*About Section*/
+
 .about {
     padding: 25px;
 }
 
+
 /*Contact Section*/
+
 .contact {
     padding: 65px;
     background-color: #1c1c1c;
@@ -195,7 +203,9 @@ body {
     text-decoration: none;
 }
 
+
 /*MISC Styling*/
+
 .section-padding {
     margin-top: -50px;
     padding-top: 50px;
@@ -209,6 +219,7 @@ body {
 #code-icons {
     width: 300px;
 }
+
 
 /*Misc Font Stylings*/
 
