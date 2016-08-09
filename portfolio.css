@@ -124,10 +124,14 @@ body {
 
 
 /*Contact Section*/
-
 .contact {
-    padding: 65px;
+    padding: 25px;
     background-color: #1c1c1c;
+    color: white;
+}
+
+.contact-content{
+    padding: 20px;
     color: white;
     padding-bottom: 50px;
     /*Bottom padding of the site*/
