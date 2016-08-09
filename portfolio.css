@@ -90,12 +90,104 @@ body {
 .about-img {
     border: 5px solid white;
     border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    box-shadow: 5px 5px 10px black;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media (max-width:939px) {
+    .about-img {
+    border: 5px solid white;
+    border-radius: 50%;
     height: 100px;
     width: 100px;
     box-shadow: 5px 5px 10px black;
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
+}
+    
+    .img-bubbles-section {
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 80%;
+}
+}
+
+@media (max-width:852px) {
+    .about-img {
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    box-shadow: 5px 5px 10px black;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+    
+    .img-bubbles-section {
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+}
+
+@media (max-width:704px){
+    .about-img {
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    box-shadow: 5px 5px 10px black;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+    .img-bubbles-section {
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    }
+}
+
+@media (max-width:587px){
+    .about-img {
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    box-shadow: 5px 5px 10px black;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+    .img-bubbles-section {
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 70%;
+    }
+}
+
+@media (max-width:375px){
+    .about-img{
+        height: 90px;
+        width: 90px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 /*Portfolio Section*/
