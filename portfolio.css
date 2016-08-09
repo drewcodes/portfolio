@@ -118,6 +118,10 @@ body {
     padding: 25px;
 }
 
+.about-section {
+    max-width: 900px;
+}
+
 
 /*Contact Section*/
 
@@ -158,12 +162,8 @@ body {
 
 /*Misc Font Stylings*/
 
-.google-font {
+.fjalla {
     font-family: 'Fjalla One';
-}
-
-.handwriting-font {
-    font-family: 'Indie Flower';
 }
 
 .grey-text {
