@@ -39,14 +39,10 @@ body {
 }
 
 /*Top Section*/
-.top-section {
-    background-image: url(cupcakes.jpg);
-    height: 100vh;
-}
 
 .jumbotron {
     height: 100vh;
-    background-image: url(cupcakes.jpg);
+    background-image: url('https://lh3.googleusercontent.com/erRYYEL1rkGXodPrCeBDp43BxRNQjmmvskLVCq1RIgRZqmBpD9jDgrsAAhceSWxPOZnGHwhkXuu4WgaOgGNagCaAdU7po9VTtay2ESRZgaaV2OnB1D4HxO8VsTwkBP_rhyiamPWEvZWGZHpKplY35iiUGzAndT9yED7MM6XmCijk-9fKCwzhYbS8mNuEMmmTFZ-YJaNg4Oh8iCBjr1HnJE6_uMkOjaSQa1bLoIWEYbeW2Qb_KwcdDvpTeQvTe6uPSldkfBOyKKa-vYN95nZLCsoy1Ov7jkLzBqfIFUjJ6VPchtgz7mjzQeSS41BZAGOaobdvdJJGuscGx8fp3U6AtzjZd3N3sqUxWV6rHJf2aXAK-kA9mNeqc5umc802G44QAbGIfXGu7He94FmUhFoht_xqNVsBdngLyAYK0uds2RMKIqrHFlfyXQQIxu0BqLK5bqo_TqxfPk-MSU01souSOeoX24eOPijtn_oQ5xwBmw5Wp_65NAZWwdJuJ6H1XDa_zzpbo9hWTAepPJtegeUdWda7YUvSK5eV5fe3C2EL7Vvx7Z-LR6Y9LuqQLPphJzMpUNSx3D1gMqMdLU1JrrOHYYDlIpVuufE=w473-h316-no>.jpg');
     margin-bottom: 0;
 }
 
