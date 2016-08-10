@@ -44,7 +44,7 @@ body {
 
 .jumbotron {
     height: 100vh;
-    background: url('https://lh3.googleusercontent.com/pRUd8xwyiCoEUF2VOT5Z_oB-TPtON_md4OGhdlbtPQsIhSTZ5_7eRWXTBWG9ZyHhbSmWy7NGOrNkJrXP5MFpqwhWja5HumpdHKjNx8NflOA_9Pei3nzqj9ZDsZjn4sAHdzgj4m-5PY6xhwReFE3Xc7eZkYcgjtDKasYb_rJfcwToA2zKNLkwNPDbgKdPgs2PDRxrFpzuxk0AHOxgBmm-GeNqeH3DQGjwmJUgFGWDe9rLm6caCaxzGmRFDoImXOkb3nxXEa7M9k-ZXWL02WBZinOcch08F5UuVNR08iOk00EKzJ2oS1t-AvNO-pe5kkxUSCq3827MWBUesaS7f24BSH2dXPQG8hqNyKjisC6qK9yaOrs36WVw_3IUmdm67OuJHj0XlRZf8nY8pI1vuM5iKpRezYrKXrBcD1mithhzTeYx_P5M1wANowWrwkbxNezXsXVTrgRB6WMzROIj9f2FYQAwg_05tWyv-jdvg7bWHrhk_2kaGXd8bQJVw0rxj6r8JYnkKUPLxA3yV0eMDvA14TyggwV58GxbYczGKjxjSZt60votqOHTaFrOJFizWEdC4MFfdLUolr3fdLhgPP8ba8HiWBtLTlc=w661-h439-no?.jpg') no-repeat center;
+    background: linear-gradient(rgba(255, 255, 255, 0.26), rgba(0, 0, 0, 0.71)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/pRUd8xwyiCoEUF2VOT5Z_oB-TPtON_md4OGhdlbtPQsIhSTZ5_7eRWXTBWG9ZyHhbSmWy7NGOrNkJrXP5MFpqwhWja5HumpdHKjNx8NflOA_9Pei3nzqj9ZDsZjn4sAHdzgj4m-5PY6xhwReFE3Xc7eZkYcgjtDKasYb_rJfcwToA2zKNLkwNPDbgKdPgs2PDRxrFpzuxk0AHOxgBmm-GeNqeH3DQGjwmJUgFGWDe9rLm6caCaxzGmRFDoImXOkb3nxXEa7M9k-ZXWL02WBZinOcch08F5UuVNR08iOk00EKzJ2oS1t-AvNO-pe5kkxUSCq3827MWBUesaS7f24BSH2dXPQG8hqNyKjisC6qK9yaOrs36WVw_3IUmdm67OuJHj0XlRZf8nY8pI1vuM5iKpRezYrKXrBcD1mithhzTeYx_P5M1wANowWrwkbxNezXsXVTrgRB6WMzROIj9f2FYQAwg_05tWyv-jdvg7bWHrhk_2kaGXd8bQJVw0rxj6r8JYnkKUPLxA3yV0eMDvA14TyggwV58GxbYczGKjxjSZt60votqOHTaFrOJFizWEdC4MFfdLUolr3fdLhgPP8ba8HiWBtLTlc=w661-h439-no?.jpg') no-repeat center;
     background-size: cover;
     margin-top: -50px;
     color: white;
