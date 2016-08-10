@@ -83,33 +83,23 @@ body {
 
 /*About*/
 .about {
-    padding: 30px;
-    background-color: #ffffff;
+    padding: 10px;
+    background: url('https://lh3.googleusercontent.com/EM3Y_i4-wnB6ull0dlbTC0GpKc2J43cnXv-LgMtTncY2Iq4oxoKE7CZ7E9xYjGLCsrgMMKJHQUw71TtiO2Q4_ekgIP1X2LbLRMRZAaczDfce1dom1vmieOj3V1t5ihoq3vvt3P3gKapUgyDyyYQrBriYRps5uDJFtEzy3L0XOA8VqArVZQcHNTu4pSM9bngovtZmxdJ1PLky_ieo2ZKjPHS1mli9j42RJxiS3PZsdK3sIQWPvqAQ-wMxwMvubGJ6UiCrR0pwnQ7yEUEEqs9PnS-sWAgXh4HmBSg5C4BWh-EZ6AxRS8rOf0_QVXuK8IR1d-DHo6525cxGFnCUG0gNBoDVngI9qPquTmag7zqGwp3qnB7Kw_tkExbxp6zhdGLFceS35OBFfVhNnZEKo7TwmDsyhbFSBIXvhj0ReoC2hA543_lSj2EBKe3Cqug-VH_Ks-hnYMYPAv9T1IbxjLvhJg8e4OHf33ZjsJ68OrEf7BILYkjg2SvB2QcrNltqFikJAUhOpKvzcmLmNRIMByIwqRKTKHtQOvU1Pt6HjpnunpdoN5l_t-s2pZlWg-MALbZwjkYwzb4QEzNugbCnHvM77HNGRDJRZHE=w960-h539-no?.jpg');
 }
 
 .about-img {
     height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 5px solid white;
-    box-shadow: 5px 5px 10px gray;
+    border: 10px solid white;
+    box-shadow: 5px 5px 10px #000000;
+    margin: 20px;
 }
 
 .about-section {
-    padding: 15px;
+    padding: 10px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-
-
-
-
-.content-placement {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50,-50);
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    
 }
