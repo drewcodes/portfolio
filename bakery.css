@@ -4,7 +4,7 @@ body {
 
 /*NavBar*/
 .navbar {
-    background-color: rgb(191, 0, 0);
+    background-color: rgb(91, 188, 217);
     color: #ffffff;
     border-style: none;
 }
@@ -97,6 +97,9 @@ body {
 
 .about-section {
     padding: 15px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
