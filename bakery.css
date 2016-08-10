@@ -12,7 +12,6 @@ body {
 #nav-title {
     color: #ffffff;
     font-family: Pacifico;
-    text-shadow: 2px 2px 10px white;
 }
 .navbar-default .navbar-nav > li > a {
     color: white;
