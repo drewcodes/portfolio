@@ -44,7 +44,7 @@ body {
 
 .jumbotron {
     height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.15), hsl(0, 0%, 0%)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/vH9qTyAriOQqTWvzxnwLeNw1Jz28A9fxo-BufZYva4iXML64ppeLdM7im46ZqTbof8lX-Xlq-OEzPCHSnLtAiyM8qY7u4NAhMKlNafzBQ3PRTYr1vNulgScDIcdHKJFtKoQw7uIRaT-pTUYUfGD_3j5IkYqr7ZxBXIAvFwLMHnY_PWsrA3tYCVwjHrDMP1m82XaGNdF1H7JR4qx7jkZI1bhQD4Gwo8lsJ_7n7HyFyQyHhum-ByC0T4bP-cY9UH6PxKL6qKeoP1YjnkVMp10OaRzfNBlpjbNxOuqdtURzio97jel4yNcrkhYg1r6durpCI9PPDaOJHnRDgIMjN-88mPjpEpe6bwLc4mev9fcAAbX3eiOU1gR3RKbkX6tzC_QDaNk1UofcYQcvLWqP4JzGW3CRlyVhlG_emnO-8utXojIYOBPWvsj8BtiTfp_pQJaxMHiPQTaGv3G32POc3x89gAOx0zzc1_gMwRJonV7clk_T2T68FON9lZRHD_qlz3qKtjIPf2NvHDQKUdLtl-TEKELZJ5omhTOQ5fSv27BxcZUeIc0Pur8vFWustwFpHzZyBUdZ8dtzX6Ggb4TffapywNYRhyL9Wv8=w667-h439-no?.jpg') no-repeat center;
+    background: url('https://lh3.googleusercontent.com/pRUd8xwyiCoEUF2VOT5Z_oB-TPtON_md4OGhdlbtPQsIhSTZ5_7eRWXTBWG9ZyHhbSmWy7NGOrNkJrXP5MFpqwhWja5HumpdHKjNx8NflOA_9Pei3nzqj9ZDsZjn4sAHdzgj4m-5PY6xhwReFE3Xc7eZkYcgjtDKasYb_rJfcwToA2zKNLkwNPDbgKdPgs2PDRxrFpzuxk0AHOxgBmm-GeNqeH3DQGjwmJUgFGWDe9rLm6caCaxzGmRFDoImXOkb3nxXEa7M9k-ZXWL02WBZinOcch08F5UuVNR08iOk00EKzJ2oS1t-AvNO-pe5kkxUSCq3827MWBUesaS7f24BSH2dXPQG8hqNyKjisC6qK9yaOrs36WVw_3IUmdm67OuJHj0XlRZf8nY8pI1vuM5iKpRezYrKXrBcD1mithhzTeYx_P5M1wANowWrwkbxNezXsXVTrgRB6WMzROIj9f2FYQAwg_05tWyv-jdvg7bWHrhk_2kaGXd8bQJVw0rxj6r8JYnkKUPLxA3yV0eMDvA14TyggwV58GxbYczGKjxjSZt60votqOHTaFrOJFizWEdC4MFfdLUolr3fdLhgPP8ba8HiWBtLTlc=w661-h439-no?.jpg') no-repeat center;
     background-size: cover;
     margin-top: -50px;
     color: white;
