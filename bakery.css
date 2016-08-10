@@ -22,7 +22,7 @@ body {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #eb5e5e;
+    color: #ffffff;
     text-shadow: none;
 }
 
@@ -75,9 +75,8 @@ body {
 .menu {
     padding: 35px;
     font-family: Heiti SC;
-    background-color: #2f2f2f;
-    color: white;
-    border: 30px solid #decba1;
+    background-color: #fcecd6;
+    color: black;
 }
 
 #menu-items {
@@ -88,7 +87,7 @@ body {
 /*About*/
 .about {
     padding: 30px;
-    background-color: #fcecd6;
+    background-color: #ffffff;
 }
 
 .about-img {
