@@ -49,6 +49,7 @@ body {
     margin-top: -50px;
     color: white;
     text-shadow: 5px 10px 10px black;
+    margin-bottom: 0;
 }
 
 .welcome-msg {
