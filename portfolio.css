@@ -80,7 +80,6 @@ body {
 
 .about {
     background: linear-gradient(rgba(255, 255, 255, 0.85), rgb(234, 234, 234)), rgba(0, 0, 0, 0.51);
-    height: 100vh;
 }
 
 .about-section {
@@ -96,7 +95,6 @@ body {
 
 .portfolio {
     padding: 25px;
-    height: 100vh;
 }
 
 .project-img {
@@ -130,7 +128,6 @@ body {
     padding: 25px;
     background-color: #1c1c1c;
     color: white;
-    height: 100vh;
 }
 
 .contact-content{
