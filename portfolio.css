@@ -166,7 +166,7 @@ body {
 
 /*GSAP*/
 .dot {
-    background-color: rgb(252, 175, 118);
+    background-color: rgb(255, 255, 255);
     height: 10px;
     width: 10px;
     margin: 20px;
