@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<!--Drew Codes - www.drewcodes.io-->
+<!--www.drewcodes.io-->
 
 <head>
     <title> drewcodes: Front End Developer </title>
@@ -11,10 +11,12 @@
     <!--Char and Device Viewport Settings-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--GOOGLE FONT LINK-->
+    <!--GOOGLE FONT-->
     <link href='https://fonts.googleapis.com/css?family=Muli|Fjalla+One|Indie+Flower' rel='stylesheet' type='text/css'>
-    <!--Font Awesome Link-->
+    <!--Font Awesome CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!--GSAP CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <!--jQuery CDN Link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <!--Bootstrap Link-->
@@ -48,9 +50,17 @@
     <a id="home"></a>
     <div class="jumbotron">
         <div class="welcome-msg text-center">
-            <h1 style="font-family:'Indie Flower';">Hello, world! I'm Drew.</h1>
-            <h2 style="color: #d8b34f;">FRONT-END DEVELOPER</h2>
-            <h4 style="font-family:'Indie Flower';">Crafting code, one pixel at a time.</h4> </div>
+            <h1 id="msg1" style="font-family:'Indie Flower';">Hello, world! I'm Drew.</h1>
+            <h2 id="msg2" style="color: #d8b34f;">FRONT-END DEVELOPER</h2>
+            <h4 id="msg3" style="font-family:'Indie Flower';">Crafting code, one pixel at a time.</h4>
+            <div class="row">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+                </div>
+        </div>
+        
     </div>
     <!--Portfolio-->
     <a id="portfolio"></a>
