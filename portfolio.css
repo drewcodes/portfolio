@@ -87,6 +87,10 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#msg2 {
+    text-transform: capitalize;
+}
+
 
 /*Portfolio Section*/
 
