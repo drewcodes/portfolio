@@ -8,7 +8,7 @@ $(document).ready(function () {
     TweenMax.from('#msg1', 1.5, {
         opacity: 0
     });
-    TweenMax.from('#msg2', 3, {
+    TweenMax.from('#msg2', 1, {
         opacity: 0
         , delay: 1
     });
