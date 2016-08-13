@@ -51,8 +51,8 @@ body {
     margin-top: -4px;
 }
 
-#logo {
-    height: 310px;
+#logo-div {
+    max-width: 350px;
 }
 
 #nav-title {
