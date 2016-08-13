@@ -103,7 +103,7 @@ body {
 
 .welcome-message {
     padding: 5px;
-    height: 610px;
+    height: 100vh;
 }
 
 #org-link {
@@ -120,9 +120,30 @@ body {
 }
 
 /*Bio Content Stylings*/
+#moy-collage {
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 1s ease-out;
+}
+
+#moy-collage.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#bio-william {
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 1s ease-out;
+}
+
+#bio-william.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
 
 .moy-content {
-    padding: 20px;
+    padding: 30px;
 }
 .moy-quote{
     padding: 20px;
@@ -158,13 +179,27 @@ body {
     max-width: 500px;
 }
 
-#school {
-    padding: -20px;
-}
+
 
 /*Class Info*/
+.class-section{
+    margin: 20px;
+}
+
 .class-info {
-    padding: 20px;
+    margin: 20px;
+}
+
+#school {
+    box-shadow: 5px 5px 10px grey;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-out;
+}
+
+#school.fade-in {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /*Contact*/
