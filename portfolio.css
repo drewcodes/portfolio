@@ -1,237 +1,58 @@
-body {
-    padding-top: 50px;
-    font-family: Muli, Verdana, Arial;
-    background-color: white;
-    color: black;
-}
-
-
-/*Nav Styling*/
-
-.navbar {
-    background-color: transparent;
-    color: white;
-    border-style: none;
-    transition: all 1s ease-out;
-}
-
-.navbar.fade-in {
-    background-color: #2f2f2f;
-    color: white;
-    border-style: none;
-}
-
-.navbar-default .navbar-nav > li > a {
-    background-color: inherit;
-    color: white;
-    text-shadow: 5px 5px 10px black;
-}
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    background-color: transparent;
-    color: white;
-    text-shadow: 5px 5px 10px black;
-}
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: inherit;
-}
-
-#nav-logo {
-    margin-left: 10px;
-    color: white;
-    line-height: 1.4;
-    text-shadow: 5px 5px 10px black;
-}
-
-/*Media Queries*/
-
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav > li > a {
-        background-color: rgba(47, 47, 47, 0.36);
-        border: none;
-        color: white;
-        text-shadow: 5px 5px 10px black;
-    }
-    .navbar-default .navbar-nav > li > a:hover,
-    .navbar-default .navbar-nav > li > a:focus {
-        background-color: rgba(47, 47, 47, 0.67);
-        color: white;
-        text-shadow: 5px 5px 10px black;
-    }
-    .navbar-default .navbar-toggle:hover,
-    .navbar-default .navbar-toggle:focus {
-        background-color: inherit;
-    }
-}
-
-
-/*Welcome Message Section*/
-
-.jumbotron {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/HkOMI_7J1WFINfyIkdaE3ibsxEO3r3GpXG4_5n0DFJHty7nrc3IsPQ_F42_BNacLy0uZdr3CskmJ6dLtCSr-MMBN3mBZwyZZT83QIBjWoP7lrzsnTdxzZ35C-B_Da5uy9a79N-kEJZbOMhPzi9y87mhCf4KotNBxKmL4Nv-ZrAsBbvn32xi_WGw5_Wdmkwd2e51KiH01-WFEUmZmWfPUJtFj58cK2WFo0d4WMmsu0cKklBtty12hm8EHys0J_tVBtloxAh4HEwS2qBtTdK1fKCfekjMTryeyxXwHgn8o19NRzm0rOCoksGlijMjSNt-32rQ7CnjJvp87HQzkLqRBFC_2Vb2IpkiboJ-7lt3AzMwY0c4XxM1hlqXLx9n4jfKQBmIdgen94QqelbjMu-3PUZOpc2IMYRWju5xikM-LvQPNySXZI13M7I3viJYBIex0F5DxI_AMS5SNaHXnOcnbcmQPDQIa8-FR4p1gvV-_tzwgxLcYfO-1fzXsaP8v33IRqnQBjR4A2_gSKItGC6mgHqznmhsnnk---I2VQ8_7O3landDSZ9pEEPNzkSg8RFRaPpgkKBji_e5GBBIZoU9377kADSUNlOQ=w989-h659-no?.jpg') no-repeat center;
-    background-size: cover;
-    margin-top: -50px;
-    color: white;
-    text-shadow: 5px 5px 10px black;
-    margin-bottom: 0;
-}
-
-.welcome-msg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#msg2 {
-    text-transform: capitalize;
-}
-
-
-/*Portfolio Section*/
-
-.portfolio {
-    padding: 25px;
-    background-color: white;
-    opacity: 0;
-    transform: translateX(-500px);
-    transition: all 1s ease-out;
-}
-
-.portfolio.fade-in {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.project-img {
-    display: inline-table;
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    box-shadow: 10px 10px 30px #888888;
-    margin-top: 20px;
-    margin-bottom: 12px;
-}
-
-#languages {
-    font-size: 18px;
-}
-
-
-/*About*/
-
-.about {
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgb(234, 234, 234)), rgba(0, 0, 0, 0.51);
-    padding: 25px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease-out;
-}
-
-.about.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.about-section {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    width: 100%;
-}
-
-
-/*Contact Section*/
-
-.contact {
-    padding: 25px;
-    background-color: #1c1c1c;
-    color: white;
-}
-
-.contact-content {
-    padding: 20px;
-    color: white;
-    padding-bottom: 50px;
-    /*Bottom padding of the site*/
-}
-
-.email-contact {
-    font-size: 20px;
-}
-
-.email-contact > a {
-    color: white;
-    text-decoration: none;
-}
-
-
-/*MISC Styling*/
-
-.section-padding {
-    margin-top: -50px;
-    padding-top: 50px;
-}
-
-.language-list > li {
-    list-style: none;
-    font-size: 20px;
-}
-
-#code-icons {
-    width: 300px;
-}
-
-
-/*Misc Font Stylings*/
-
-.fjalla {
-    font-family: 'Fjalla One';
-}
-
-.grey-text {
-    color: #c7c7c7;
-}
-
-.orange-text {
-    color: darkorange;
-}
-
-#contact-icons {
-    width: 270px;
-    padding-left: 10px;
-}
-
-
-/*GSAP*/
-
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 10px;
-    box-shadow: 3px 3px 10px black;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-#red {
-    background-color: #ff5e5e;
-}
-
-#green {
-    background-color: #58d658;
-}
-
-#blue {
-    background-color: #8dc6ff;
-}
-
-#yellow {
-    background-color: #ffff37;
-}
+$(document).ready(function () {
+    //GSAP
+    TweenMax.to('.spinner', 5, {
+        x: 0
+        , rotation: 360
+        , repeat: 100
+    });
+    TweenMax.from('#msg1', 1.5, {
+        opacity: 0
+    });
+    TweenMax.from('#msg2', 1, {
+        opacity: 0
+        , delay: 1
+    });
+    TweenMax.from('#msg3', 1, {
+        x: -500
+        , opacity: 0
+        , scale: 1
+        , delay: 2
+    });
+    TweenMax.staggerFrom('.dot', 0.5, {
+        opacity: 0
+        , y: 150
+        , delay: 0.5
+    }, 0.3);
+    //TweenMax.to('.dot', 0.5, {opacity:0, delay:2});
+    //scrollmagic
+    var controller = new ScrollMagic.Controller();
+    //navbar
+    var navbar = new ScrollMagic.Scene({
+        triggerElement: '.portfolio'
+    }).setClassToggle('.navbar', 'fade-in').addTo(controller);
+    // portfolio scene
+    var portfolio = new ScrollMagic.Scene({
+        triggerElement: '.portfolio'
+    }).setClassToggle('.portfolio', 'fade-in').addTo(controller);
+    //about scene
+    var about = new ScrollMagic.Scene({
+        triggerElement: '.about'
+    }).setClassToggle('.about', 'fade-in').addTo(controller);
+    //smooth-scroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        var target = this.hash
+            , $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 50
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+    //collapse navbar menu after click
+    $(document).on('click', '.navbar-collapse.in', function (e) {
+        if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+            $(this).collapse('hide');
+        }
+    });
+});
