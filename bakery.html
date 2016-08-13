@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-<!--Coded by Drew Codes www.drewcodes.io -->
+<!--www.drewcodes.io -->
 
 <head>
     <title> Sweet Bites Concept UI</title>
@@ -11,6 +11,11 @@
     <link href='https://fonts.googleapis.com/css?family=Pacifico|Muli' rel='stylesheet' type='text/css'>
     <!--Font Awesome Link-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--scrollmagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <!--jQuery CDN Link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <!--Bootstrap Link-->
@@ -44,14 +49,15 @@
     <a id="home"></a>
     <div class="jumbotron">
         <div class="welcome-msg text-center">
-            <h1 style="font-family: Pacifico;">Sweet Bites</h1>
-            <h4>A Handcrafted Confectionary Experience</h4>
+            <h1 id="msg" style="font-family: Pacifico;">Sweet Bites</h1>
+            <hr>
+            <h4 id="msg2">A Handcrafted Confectionary Experience</h4>
         </div>
     </div>
     <!--Menu-->
     <a id="menu"></a>
     <div class="menu text-center">
-        <div class="row">
+        <div id="menu-slide" class="row">
             <h1 style="font-family: Pacifico;">Sweet Bites</h1>
             <h5>Handcrafted Cakes and Confectionaries</h5>
             <h6>Everything is made fresh to order.</h6>
