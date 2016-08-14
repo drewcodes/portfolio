@@ -1,9 +1,11 @@
 body {
-    font-family:Muli;
+    font-family: Muli;
     padding-top: 70px;
 }
 
+
 /*Navbar Styling*/
+
 .navbar {
     background-color: rgb(197, 21, 36);
 }
@@ -16,9 +18,12 @@ body {
     border: none;
     outline: none;
 }
+
+
 /*Removes focus highlight from Bootstrap*/
+
 .highlight {
-    background: rgb(197, 21, 36);
+    background: #c51524;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -26,10 +31,11 @@ body {
     color: white;
 }
 
-.navbar-default .navbar-nav > li > a:hover{
+.navbar-default .navbar-nav > li > a:hover {
     background-color: rgb(197, 21, 36);
     color: white;
 }
+
 .navbar-default .navbar-nav > li > a:focus {
     background-color: rgb(197, 21, 36);
     color: white;
@@ -39,7 +45,6 @@ body {
 .navbar-default .navbar-toggle:focus {
     background-color: rgb(197, 21, 36);
 }
-
 
 #logo-nav {
     height: 30px;
@@ -60,13 +65,14 @@ body {
 }
 
 
-
 /*Navbar Collapse Breakpoint*/
+
 @media (max-width: 970px) {
     .navbar-header {
         float: none;
     }
-    .navbar-left,.navbar-right {
+    .navbar-left,
+    .navbar-right {
         float: none !important;
     }
     .navbar-toggle {
@@ -74,7 +80,7 @@ body {
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
     .navbar-fixed-top {
         top: 0;
@@ -94,16 +100,17 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .collapse.in{
-        display:block !important;
+    .collapse.in {
+        display: block !important;
     }
 }
 
-/*Welcome Message*/
+
+/*Welcome Section*/
 
 .welcome-message {
     padding: 5px;
-    height: 610px;
+    height: 100vh;
 }
 
 #org-link {
@@ -111,23 +118,43 @@ body {
     color: black;
 }
 
-/*Welcome Message Collage*/
-
 .img-style {
     border-style: solid;
     border-color: white;
     border-width: 5px;
 }
 
-/*Bio Content Stylings*/
+.content-a {
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 1s ease-out;
+}
+
+.content-a.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.content-b {
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 1s ease-out;
+}
+
+.content-b.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
 
 .moy-content {
     padding: 20px;
 }
-.moy-quote{
+
+.moy-quote {
     padding: 20px;
     color: white;
 }
+
 #moyyat-pic {
     padding: 10px;
     height: 200px;
@@ -141,9 +168,11 @@ body {
     border-radius: 10%;
 }
 
+
 /*Video*/
+
 .video {
-    background-color: rgb(197,21,36);
+    background-color: rgb(197, 21, 36);
     padding: 20px;
     height: auto;
     color: white;
@@ -158,39 +187,62 @@ body {
     max-width: 500px;
 }
 
-#school {
-    padding: -20px;
+
+/*Ving Tsun Info*/
+
+.vingtsun {
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 1s ease-out;
 }
+
+.vingtsun.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 /*Class Info*/
-.class-info {
+
+.classes {
     padding: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
 }
 
+.classes.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /*Contact*/
+
 .contact {
     padding: 35px;
 }
 
+
 /*Red Div*/
+
 .red {
-    background-color: rgb(197,21,36);
+    background-color: rgb(197, 21, 36);
     color: white;
     padding: 20px;
 }
 
-.style-plain {
-    background-color: white;
-    color: black;
-    padding: 20px;
-}
 
 /*Footer*/
+
 .site-footer {
     margin-bottom: 0px;
 }
 
+
 /*padding stylings*/
+
 .section {
     padding-top: 50px;
     margin-top: -70px;
