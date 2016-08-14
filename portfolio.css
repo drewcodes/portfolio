@@ -98,7 +98,7 @@ body {
     padding: 25px;
     background-color: white;
     opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-50px);
     transition: all 1s ease-out;
 }
 
