@@ -57,12 +57,13 @@ body {
 }
 
 #logo {
-    height: 310px;
+    max-width: 300px;
 }
 
 #nav-title {
     color: white;
 }
+
 
 
 /*Navbar Collapse Breakpoint*/
@@ -102,6 +103,10 @@ body {
     }
     .collapse.in {
         display: block !important;
+    }
+    
+    #logo {
+        max-width: 30%;
     }
 }
 
