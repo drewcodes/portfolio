@@ -41,7 +41,7 @@ $(document).ready(function () {
                         if (logo === null) {
                             logo = 'http://web.vmc3.com/projects/bufs/branch/marines/logos/NoLogo.jpg';
                         }
-                        $(".offline-display").append("<div class='user offline container-fluid'>" + "<div class='red red-user'></div>" + "<img src='" + logo + "'>" + "<h5>" + "<a class='channelurl' href=" + channelURL + name + ">" + name + "</a>" + "</h5>" + ' is ' + "<span class='description'>" + status + "</span>" + "</div>");
+                        $(".offline-display").append("<a class='channelurl' target='_blank' href=" + channelURL + name + ">" + "<div class='user offline container-fluid'>" + "<div class='red red-user'></div>" + "<img src='" + logo + "'>" + "<h5>" + name + "</h5>" + ' is ' + "<span class='description'>" + status + "</span>" + "</div>"+"</a>");
                     });
                 }
                 // Channels Online
@@ -54,7 +54,7 @@ $(document).ready(function () {
                         logo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeF9yiuuOJBNO8VpXsVp2VQIpBSTPdLKW6uB3AI-jmSX9G74bX1g';
                     }
                     // Channels online with or without logo
-                    $(".online-display").append("<div class='user online container-fluid'>" + "<div class='green green-user'></div>" + "<img src='" + logo + "'>" + "<h5>" + "<a class='channelurl' href=" + channelURL + name + ">" + name + "</a>" + "</h5>" + "<span class='description'>" + status + "</span>" + "</div>");
+                    $(".online-display").append("<a class='channelurl' target='_blank' href=" + channelURL + name + ">" + "<div class='user online container-fluid'>" + "<div class='green green-user'></div>" + "<img src='" + logo + "'>" + "<h5>" + name + "</h5>" + "<span class='description'>" + status + "</span>" + "</div>"+"</a>");
                 }
             });
         }
