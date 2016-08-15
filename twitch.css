@@ -112,6 +112,17 @@ img {
     padding: 20px;
 }
 
+.channelurl {
+    color: white;
+    text-decoration: none;
+}
+
+.channelurl:hover, .channelurl:focus {
+    color: white;
+    text-decoration: none;
+}
+
+
 .description {
     font-size: 12px;
     padding: 10px;
