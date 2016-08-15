@@ -1,46 +1,45 @@
 body {
-  background-color: black;
-  color: white;
-  font-family: Verdana;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    font-family: Verdana;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 p {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .weather-details {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 .location {
-  height: 75px;
-  font-size: 30px;
-  font-family: Helvetica;
+    height: 75px;
+    font-size: 30px;
+    font-family: Helvetica;
 }
 
 .weatherbox {
-  background-color: rgba(179, 0, 0, 0.55);
-  height: 550px;
-  max-width: 475px;
-  border-radius: 10px;
+    background-color: rgba(179, 0, 0, 0.78);
+    height: 490px;
+    max-width: 275px;
+    border-radius: 30px;
     margin: auto;
-  font-size: 15px;
-  padding: 20px;
+    font-size: 15px;
+    padding: 20px;
     display: block;
 }
 
 .weatherType {
-  height: 50px;
-  width: 100px;
+    height: 50px;
+    width: 100px;
 }
 
-.temp-info{
-  background-color: white;
-  height: 100px;
-  color: black;
-  padding: 20px;
-  font-size: 35px;
-  font-family: Avenir;
+.temp-info {
+    background-color: transparent;
+    height: 100px;
+    color: white;
+    font-size: 75px;
+    font-family: Avenir;
 }
