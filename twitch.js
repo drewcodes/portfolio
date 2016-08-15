@@ -62,17 +62,24 @@ $(document).ready(function () {
         $('.offline').addClass('turn-off');
         $('.online').removeClass('turn-off');
         $('.unavailable-user').addClass('turn-off');
+        TweenMax.staggerFrom('.online', 0.5, {opacity:0, x:-50, delay: 0.5}, 0.3);
     });
     // Show Offline Users
     $('#offline').click(function () {
         $('.online').addClass('turn-off');
         $('.offline').removeClass('turn-off');
         $('.unavailable-user').addClass('turn-off');
+         TweenMax.staggerFrom('.offline', 0.5, {opacity:0, x:-50, delay: 0.5}, 0.3);
     });
     // SHow All Users
     $('#all-online').click(function () {
         $('.online').removeClass('turn-off');
         $('.offline').removeClass('turn-off');
         $('.unavailable-user').removeClass('turn-off');
+        TweenMax.staggerFrom('.online', 0.5, {opacity:0, x:-50, delay: 0.5}, 0.3);
+        TweenMax.staggerFrom('.offline', 0.5, {opacity:0, x:-50, delay: 0.5}, 0.3);
     });
+    
+    // Tweens
+    TweenMax.from('.user-results', 2, {opacity:0, delay:1});
 });
