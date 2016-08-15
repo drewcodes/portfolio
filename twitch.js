@@ -71,15 +71,14 @@ $(document).ready(function () {
         $('.unavailable-user').addClass('turn-off');
          TweenMax.staggerFrom('.offline', 0.5, {opacity:0, x:-50, delay: 0.5}, 0.3);
     });
-    // SHow All Users
+    // Show All Users
     $('#all-online').click(function () {
         $('.online').removeClass('turn-off');
         $('.offline').removeClass('turn-off');
         $('.unavailable-user').removeClass('turn-off');
-        TweenMax.staggerFrom('.online', 0.5, {opacity:0, x:-50, delay: 0.5}, 0.3);
-        TweenMax.staggerFrom('.offline', 0.5, {opacity:0, x:-50, delay: 0.5}, 0.3);
+        TweenMax.from('.user-results', 2, {opacity:0});
     });
     
     // Tweens
-    TweenMax.from('.user-results', 2, {opacity:0, delay:1});
+    TweenMax.from('.user-results', 2, {opacity:0});
 });
