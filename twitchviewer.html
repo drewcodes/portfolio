@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title> Twitch Channel Viewer </title>
+    <!--Char and Device Viewport Settings-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--GOOGLE FONT LINK-->
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--jQuery CDN Link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--Javascript Link-->
+    <script type="text/javascript" src="twitch.js"></script>
+    <!--CSS Link-->
+    <link rel="stylesheet" type="text/css" href="twitch.css"> </head>
+
+<body>
+    <div>
+        <div id="header" class="container-fluid text-center">
+            <h1 id="title">TWITCH.TV STREAMERS</h1>
+            <a href="https://www.twitch.tv/freecodecamp" target="blank">
+                <h5 id="fcc-status" class="text-center"></h5></a>
+        </div>
+        <!--Online/Offline User Switch-->
+        <div class="switch">
+            <center>
+                <button id='all-online'>ALL CHANNELS</button>
+                <button id='online'>
+                    <div class='green'></div>ONLINE</button>
+                <button id='offline'>
+                    <div class='red'></div>OFFLINE</button>
+            </center>
+        </div>
+        <!--Users Display-->
+        <div class="user-results">
+            <center>
+                <div class="online-display"></div>
+                <div class="offline-display"></div>
+                <div class="unavailable-display"></div>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
