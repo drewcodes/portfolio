@@ -23,6 +23,7 @@ $(document).ready(function () {
         following.push('ESL_SC2');
         for (var i = 0; i < following.length; i++) {
             var url2 = 'https://api.twitch.tv/kraken/streams/' + following[i] + '/?callback=?';
+            var channelURL = 'https://www.twitch.tv/';
             $.getJSON(url2).done(function (data2) {
                 var logo;
                 var name;
@@ -31,6 +32,7 @@ $(document).ready(function () {
                     logo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeF9yiuuOJBNO8VpXsVp2VQIpBSTPdLKW6uB3AI-jmSX9G74bX1g';
                     $(".unavailable-display").append("<div class='user unavailable-user container-fluid'>" + "<div class='grey grey-user'></div>" + "<img src='" + logo + "'>" + ' ' + data2.message + "</div>");
                 }
+                // Channels Offline
                 if (data2.stream === null) {
                     $.getJSON(data2._links.channel, function (data3) {
                         var status = "OFFLINE";
@@ -39,7 +41,7 @@ $(document).ready(function () {
                         if (logo === null) {
                             logo = 'http://web.vmc3.com/projects/bufs/branch/marines/logos/NoLogo.jpg';
                         }
-                        $(".offline-display").append("<div class='user offline container-fluid'>" + "<div class='red red-user'></div>" + "<img src='" + logo + "'>" + "<h5>" + name + "</h5>" + ' is ' + "<span class='description'>" + status + "</span>" + "</div>");
+                        $(".offline-display").append("<div class='user offline container-fluid'>" + "<div class='red red-user'></div>" + "<img src='" + logo + "'>" + "<h5>" + "<a class='channelurl' href=" + channelURL + name + ">" + name + "</a>" + "</h5>" + ' is ' + "<span class='description'>" + status + "</span>" + "</div>");
                     });
                 }
                 // Channels Online
@@ -52,7 +54,7 @@ $(document).ready(function () {
                         logo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeF9yiuuOJBNO8VpXsVp2VQIpBSTPdLKW6uB3AI-jmSX9G74bX1g';
                     }
                     // Channels online with or without logo
-                    $(".online-display").append("<div class='user online container-fluid'>" + "<div class='green green-user'></div>" + "<img src='" + logo + "'>" + "<h5>" + name + "</h5>" + "<span class='description'>" + status + "</span>" + "</div>");
+                    $(".online-display").append("<div class='user online container-fluid'>" + "<div class='green green-user'></div>" + "<img src='" + logo + "'>" + "<h5>" + "<a class='channelurl' href=" + channelURL + name + ">" + name + "</a>" + "</h5>" + "<span class='description'>" + status + "</span>" + "</div>");
                 }
             });
         }
@@ -62,23 +64,34 @@ $(document).ready(function () {
         $('.offline').addClass('turn-off');
         $('.online').removeClass('turn-off');
         $('.unavailable-user').addClass('turn-off');
-        TweenMax.staggerFrom('.online', 0.5, {opacity:0, x:-50, delay: 0.5}, 0.3);
+        TweenMax.staggerFrom('.online', 0.5, {
+            opacity: 0
+            , x: -50
+            , delay: 0.5
+        }, 0.3);
     });
     // Show Offline Users
     $('#offline').click(function () {
         $('.online').addClass('turn-off');
         $('.offline').removeClass('turn-off');
         $('.unavailable-user').addClass('turn-off');
-         TweenMax.staggerFrom('.offline', 0.5, {opacity:0, x:-50, delay: 0.5}, 0.3);
+        TweenMax.staggerFrom('.offline', 0.5, {
+            opacity: 0
+            , x: -50
+            , delay: 0.5
+        }, 0.3);
     });
     // Show All Users
     $('#all-online').click(function () {
         $('.online').removeClass('turn-off');
         $('.offline').removeClass('turn-off');
         $('.unavailable-user').removeClass('turn-off');
-        TweenMax.from('.user-results', 2, {opacity:0});
+        TweenMax.from('.user-results', 2, {
+            opacity: 0
+        });
     });
-    
     // Tweens
-    TweenMax.from('.user-results', 2, {opacity:0});
+    TweenMax.from('.user-results', 2, {
+        opacity: 0
+    });
 });
