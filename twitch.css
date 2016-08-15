@@ -1,0 +1,126 @@
+body {
+    background-color: #5a5a5a;
+    color: black;
+    font-family: Muli;
+}
+
+#header {
+    background-color: #313030;
+    color: white;
+}
+
+button {
+    border-radius: 5px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+img {
+    width: 70px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 3px 3px 5px black;
+    float: left;
+}
+
+.user {
+    margin: 10px;
+}
+
+#title {
+    font-family: Impact;
+    color: #ffffff;
+}
+
+.green {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    border: 3px solid #75b475;
+    float: left;
+}
+
+.green-user {
+    margin-top: 26px;
+}
+
+.red {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #f88d8d;
+    border: 3px solid #c15151;
+    float: left;
+}
+
+.red-user {
+    margin-top: 26px;
+}
+
+.grey {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+    border: 3px solid #575757;
+    float: left;
+}
+
+.grey-user {
+    margin-top: 26px;
+}
+
+.online {
+    background-color: #4fa0a3;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: 5px solid white;
+    margin-left: 0px;
+}
+
+.offline {
+    background-color: #be9292;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: 5px solid white;
+    margin-left: 0px;
+}
+
+.unavailable-user {
+    background-color: #848484;
+    border-radius: 10px;
+    color: #ffe200;
+    width: 100%;
+    padding: 10px;
+    border: 5px solid white;
+    margin-left: 0px;
+}
+
+.user-results {
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.description {
+    font-size: 12px;
+    padding: 10px;
+}
+
+
+.switch {
+    margin-top: 20px;
+}
+
+.turn-off {
+    display: none;
+}
