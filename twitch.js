@@ -15,12 +15,16 @@ $(document).ready(function () {
         for (var i = 0; i < data.follows.length; i++) {
             // display names
             var displayName = data.follows[i].channel.display_name;
+            var channelURL = data.follows[i].channel.url;
             following.push(displayName);
         }
-        // 3 Test Users pushed to array
+        // Test Channels pushed to array
         following.push('comster404');
         following.push('brunofin');
         following.push('ESL_SC2');
+        following.push('GSL');
+        following.push('Cryaotic');
+        
         for (var i = 0; i < following.length; i++) {
             var url2 = 'https://api.twitch.tv/kraken/streams/' + following[i] + '/?callback=?';
             var channelURL = 'https://www.twitch.tv/';
@@ -49,6 +53,12 @@ $(document).ready(function () {
                     status = data2.stream.channel.status;
                     logo = data2.stream.channel.logo;
                     name = data2.stream.channel.display_name;
+                    
+                    // Truncate the channel status
+                    if(status.length > 33) {
+                        status = status.slice(0, 30) + '...';
+                    }
+                    
                     // Channels without a logo
                     if (logo === null) {
                         logo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeF9yiuuOJBNO8VpXsVp2VQIpBSTPdLKW6uB3AI-jmSX9G74bX1g';
@@ -76,7 +86,7 @@ $(document).ready(function () {
         $('.offline').removeClass('turn-off');
         $('.unavailable-user').addClass('turn-off');
         TweenMax.staggerFrom('.offline', 0.5, {
-            opacity: 0
+            opacity:0
             , x: -50
             , delay: 0.5
         }, 0.3);
@@ -92,6 +102,6 @@ $(document).ready(function () {
     });
     // Tweens
     TweenMax.from('.user-results', 2, {
-        opacity: 0
+        opacity:0
     });
 });
