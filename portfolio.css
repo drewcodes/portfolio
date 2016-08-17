@@ -155,10 +155,9 @@ body {
 }
 
 .skills-chart {
-    background-color: white;
-    margin: 20px;
+    background-color: transparent;
     padding: 20px;
-    max-width: 600px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
