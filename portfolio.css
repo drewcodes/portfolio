@@ -129,13 +129,13 @@ body {
     padding: 25px;
     background-color: #e6e6e6;
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateY(50px);
     transition: all 1s ease-out;
 }
 
 .about.fade-in {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 .about-section {
