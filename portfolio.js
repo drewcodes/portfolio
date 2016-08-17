@@ -43,12 +43,15 @@ $(document).ready(function () {
         triggerElement: '.about'
     }).setClassToggle('.about', 'fade-in').addTo(controller);
     /*testing bar graph*/
-    var htmlcssbar = new ScrollMagic.Scene({
+    var codeskills = new ScrollMagic.Scene({
         triggerElement: '.skills'
-    }).setClassToggle('#html-css', 'html-css').addTo(controller);
-    var jqueryjsbar = new ScrollMagic.Scene({
+    }).setClassToggle('#code-skills', 'code-skills').addTo(controller);
+    var coffee = new ScrollMagic.Scene({
         triggerElement: '.skills'
-    }).setClassToggle('#jquery-javascript', 'jquery-javascript').addTo(controller);
+    }).setClassToggle('#coffee', 'coffee').addTo(controller);
+    var art = new ScrollMagic.Scene({
+        triggerElement: '.skills'
+    }).setClassToggle('#art', 'art').addTo(controller);
     var guitar = new ScrollMagic.Scene({
         triggerElement: '.skills'
     }).setClassToggle('#guitar', 'guitar').addTo(controller);
