@@ -1,9 +1,5 @@
 $(document).ready(function () {
-    //Navbar
-    TweenMax.from('.navbar', 2, {
-        opacity: 0
-        , delay: 7
-    });
+   
     TweenMax.from('#msg1', 2, {
         opacity: 0
         , scale: 1
