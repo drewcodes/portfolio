@@ -13,7 +13,7 @@ $(document).ready(function () {
         , delay: 1
     });
     TweenMax.from('#msg3', 1, {
-        x: -500
+        y: -20
         , opacity: 0
         , scale: 1
         , delay: 2
@@ -23,7 +23,11 @@ $(document).ready(function () {
         , y: 150
         , delay: 0.5
     }, 0.3);
-    //TweenMax.to('.dot', 0.5, {opacity:0, delay:2});
+    TweenMax.staggerTo('.dot', 0.5, {
+        opacity: 0
+        , x: 150
+        , delay: 6
+    }, 0.3);
     //scrollmagic
     var controller = new ScrollMagic.Controller();
     //navbar
@@ -38,6 +42,22 @@ $(document).ready(function () {
     var about = new ScrollMagic.Scene({
         triggerElement: '.about'
     }).setClassToggle('.about', 'fade-in').addTo(controller);
+    /*testing bar graph*/
+    var htmlcssbar = new ScrollMagic.Scene({
+        triggerElement: '.skills'
+    }).setClassToggle('#html-css', 'html-css').addTo(controller);
+    var jqueryjsbar = new ScrollMagic.Scene({
+        triggerElement: '.skills'
+    }).setClassToggle('#jquery-javascript', 'jquery-javascript').addTo(controller);
+    var guitar = new ScrollMagic.Scene({
+        triggerElement: '.skills'
+    }).setClassToggle('#guitar', 'guitar').addTo(controller);
+    var dancing = new ScrollMagic.Scene({
+        triggerElement: '.skills'
+    }).setClassToggle('#dancing', 'dancing').addTo(controller);
+    var scifigeek = new ScrollMagic.Scene({
+        triggerElement: '.skills'
+    }).setClassToggle('#sci-fi', 'sci-fi').addTo(controller);
     //smooth-scroll
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
