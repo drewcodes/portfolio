@@ -46,6 +46,7 @@ body {
     text-shadow: 5px 5px 10px black;
 }
 
+
 /*Media Queries*/
 
 @media (max-width: 767px) {
@@ -147,6 +148,70 @@ body {
 }
 
 
+/*Skills Section*/
+
+.skills {
+    padding: 20px 20px 20px 20px;
+}
+
+.skills-chart {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-bar {
+    height: 20px;
+    width: 100%;
+    background-color: #ededed;
+    border-radius: 20px;
+}
+
+.level {
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+}
+
+#html-css.html-css {
+    width: 90%;
+    background-color: #42acef;
+    transition: all 2s ease-out;
+}
+
+#jquery-javascript.jquery-javascript {
+    width: 82%;
+    background-color: #e05858;
+    transition: all 2s ease-out;
+}
+
+#guitar.guitar {
+    width: 95%;
+    background-color: #87c611;
+    transition: all 2s ease-out;
+}
+
+#dancing.dancing {
+    width: 30%;
+    background-color: darkorange;
+    transition: all 2s ease-out;
+}
+
+#sci-fi.sci-fi {
+    width: 98%;
+    background-color: #eddb55;
+    transition: all 2s ease-out;
+}
+
+#number {
+    color: white;
+    margin-left: 10px;
+}
+
+
 /*Contact Section*/
 
 .contact {
@@ -200,7 +265,7 @@ body {
 }
 
 .orange-text {
-    color: darkorange;
+    color: #ff8c00;
 }
 
 #contact-icons {
