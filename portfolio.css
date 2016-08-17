@@ -126,16 +126,16 @@ body {
 /*About*/
 
 .about {
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgb(234, 234, 234)), rgba(0, 0, 0, 0.51);
     padding: 25px;
+    background-color: #e6e6e6;
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateX(50px);
     transition: all 1s ease-out;
 }
 
 .about.fade-in {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .about-section {
@@ -173,39 +173,40 @@ body {
     height: 100%;
     width: 0%;
     border-radius: 20px;
+    background-color: #ff971e;
 }
 
-#html-css.html-css {
+#code-skills.code-skills {
     width: 90%;
-    background-color: #42acef;
     transition: all 2s ease-out;
 }
 
-#jquery-javascript.jquery-javascript {
-    width: 82%;
-    background-color: #e05858;
+#art.art {
+    width: 90%;
+    transition: all 2s ease-out;
+}
+
+#coffee.coffee {
+    width: 45%;
     transition: all 2s ease-out;
 }
 
 #guitar.guitar {
     width: 95%;
-    background-color: #87c611;
     transition: all 2s ease-out;
 }
 
 #dancing.dancing {
     width: 30%;
-    background-color: darkorange;
     transition: all 2s ease-out;
 }
 
 #sci-fi.sci-fi {
     width: 98%;
-    background-color: #eddb55;
     transition: all 2s ease-out;
 }
 
-#number {
+.level-number {
     color: white;
     margin-left: 10px;
 }
