@@ -26,7 +26,7 @@ $(document).ready(function () {
     TweenMax.staggerTo('.dot', 0.5, {
         opacity: 0
         , x: 150
-        , delay: 6
+        , delay: 4
     }, 0.3);
     //scrollmagic
     var controller = new ScrollMagic.Controller();
