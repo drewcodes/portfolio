@@ -1,4 +1,19 @@
 $(document).ready(function () {
+    
+    
+    $('.moy-view, .twitch-view').hide();
+    
+    // Moy Details View
+    $('.moy-back').click(function(){
+        $('.moy-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    
+    // Twitch Details View
+    $('.twitch-back').click(function(){
+        $('.twitch-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    
+    
     //GSAP
     TweenMax.to('.spinner', 5, {
         x: 0
@@ -18,16 +33,7 @@ $(document).ready(function () {
         , scale: 1
         , delay: 2
     });
-    TweenMax.staggerFrom('.dot', 0.5, {
-        opacity: 0
-        , y: 150
-        , delay: 0.5
-    }, 0.3);
-    TweenMax.staggerTo('.dot', 0.5, {
-        opacity: 0
-        , x: 150
-        , delay: 4
-    }, 0.3);
+
     //scrollmagic
     var controller = new ScrollMagic.Controller();
     //navbar
@@ -49,12 +55,6 @@ $(document).ready(function () {
     var coffee = new ScrollMagic.Scene({
         triggerElement: '.skills'
     }).setClassToggle('#coffee', 'coffee').addTo(controller);
-    var art = new ScrollMagic.Scene({
-        triggerElement: '.skills'
-    }).setClassToggle('#art', 'art').addTo(controller);
-    var guitar = new ScrollMagic.Scene({
-        triggerElement: '.skills'
-    }).setClassToggle('#guitar', 'guitar').addTo(controller);
     var dancing = new ScrollMagic.Scene({
         triggerElement: '.skills'
     }).setClassToggle('#dancing', 'dancing').addTo(controller);
