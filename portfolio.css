@@ -73,7 +73,7 @@ body {
 
 .jumbotron {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/HkOMI_7J1WFINfyIkdaE3ibsxEO3r3GpXG4_5n0DFJHty7nrc3IsPQ_F42_BNacLy0uZdr3CskmJ6dLtCSr-MMBN3mBZwyZZT83QIBjWoP7lrzsnTdxzZ35C-B_Da5uy9a79N-kEJZbOMhPzi9y87mhCf4KotNBxKmL4Nv-ZrAsBbvn32xi_WGw5_Wdmkwd2e51KiH01-WFEUmZmWfPUJtFj58cK2WFo0d4WMmsu0cKklBtty12hm8EHys0J_tVBtloxAh4HEwS2qBtTdK1fKCfekjMTryeyxXwHgn8o19NRzm0rOCoksGlijMjSNt-32rQ7CnjJvp87HQzkLqRBFC_2Vb2IpkiboJ-7lt3AzMwY0c4XxM1hlqXLx9n4jfKQBmIdgen94QqelbjMu-3PUZOpc2IMYRWju5xikM-LvQPNySXZI13M7I3viJYBIex0F5DxI_AMS5SNaHXnOcnbcmQPDQIa8-FR4p1gvV-_tzwgxLcYfO-1fzXsaP8v33IRqnQBjR4A2_gSKItGC6mgHqznmhsnnk---I2VQ8_7O3landDSZ9pEEPNzkSg8RFRaPpgkKBji_e5GBBIZoU9377kADSUNlOQ=w989-h659-no?.jpg') no-repeat center;
+    background: linear-gradient(rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.12)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/SXNlEMxomIaBqPWwshGN3ZyLJt_v5nJBNK4r6UXTHN1in2g3OM-aMPWLjRV40qy87zbRnHgONqVDWhAD0KL_AT-xJr8C2ODp4gsOBwvruCK1ZjP7HonWDn94yEAAlhIA4tF6QBSfiAiW467hx5dbomYgTLhtj4u8u-D2Z7_cDcrYkqCJG3mL1TGIN8cAXMiHSH56qJV1D5XDq2m0mOcIj5cvTq_PvXDY6qBtX5JNCLd99oLgAjYcbPWJ5f8J1FzBwYAljPMXI83uf9hKIBascKrgqdtU30pXwPrf1SgP9mfCJhmFfOsU2BRBKqhl5jaDKXHI98aG3dWGcb1d3VuO4_3ucrLMLftOwvJRHbrBT1IreoYW4ieJp1gLPlKFWgFeJ4Y8VsUA3K9ND_Wad7AJSiqM_1XyyX0PhC0F9ncqP7QAW7tf4U1WnTym1_VfZzq1vxYQDcsfkfKk8TuXM-vrxaw7YewtLtrjY7b8n6eKfM7t0j-ZqVzsl3r-4OdHtTdJS0e551WnClUIkM1HS4I9LXjIVBwtELOfC5gQrTGl-NhfByP3MKv0Dc2G0cnOYZ5gCOTLCujC3uMdvNzyjrlS6riMVJaH8sSAD-4OIfxp-zDiM2ZE=w660-h440-no?.jpg') no-repeat center;
     background-size: cover;
     margin-top: -50px;
     color: white;
@@ -177,22 +177,12 @@ body {
 }
 
 #code-skills.code-skills {
-    width: 90%;
-    transition: all 2s ease-out;
-}
-
-#art.art {
-    width: 90%;
+    width: 85%;
     transition: all 2s ease-out;
 }
 
 #coffee.coffee {
-    width: 45%;
-    transition: all 2s ease-out;
-}
-
-#guitar.guitar {
-    width: 95%;
+    width: 50%;
     transition: all 2s ease-out;
 }
 
@@ -202,7 +192,7 @@ body {
 }
 
 #sci-fi.sci-fi {
-    width: 98%;
+    width: 95%;
     transition: all 2s ease-out;
 }
 
