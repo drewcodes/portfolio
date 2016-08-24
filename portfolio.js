@@ -1,7 +1,7 @@
 $(document).ready(function () {
     
     
-    $('.moy-view, .twitch-view').hide();
+    $('.moy-view, .twitch-view, .wiki-view, .weather-view, .random-view, .tribute-view').hide();
     
     // Moy Details View
     $('.moy-back').click(function(){
@@ -12,6 +12,27 @@ $(document).ready(function () {
     $('.twitch-back').click(function(){
         $('.twitch-view, .projects-view').fadeToggle('900', 'swing');
     });
+    
+    // Wikipedia Search Details View
+    $('.wiki-back').click(function(){
+        $('.wiki-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    
+    // Weather Details View
+    $('.weather-back').click(function(){
+        $('.weather-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    
+    // Random Quotes Details View
+    $('.random-back').click(function(){
+        $('.random-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    
+    // Tribute Page Details View
+    $('.tribute-back').click(function(){
+        $('.tribute-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    
     
     
     //GSAP
