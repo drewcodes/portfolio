@@ -164,6 +164,11 @@ body {
     color: white;
 }
 
+#moy-collage {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #moyyat-pic {
     padding: 10px;
     height: 200px;
