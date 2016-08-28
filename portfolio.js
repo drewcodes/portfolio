@@ -1,40 +1,29 @@
 $(document).ready(function () {
-    
-    
     $('.moy-view, .twitch-view, .wiki-view, .weather-view, .random-view, .tribute-view').hide();
-    
     // Moy Details View
-    $('.moy-back').click(function(){
+    $('.moy-back').click(function () {
         $('.moy-view, .projects-view').fadeToggle('900', 'swing');
     });
-    
     // Twitch Details View
-    $('.twitch-back').click(function(){
+    $('.twitch-back').click(function () {
         $('.twitch-view, .projects-view').fadeToggle('900', 'swing');
     });
-    
     // Wikipedia Search Details View
-    $('.wiki-back').click(function(){
+    $('.wiki-back').click(function () {
         $('.wiki-view, .projects-view').fadeToggle('900', 'swing');
     });
-    
     // Weather Details View
-    $('.weather-back').click(function(){
+    $('.weather-back').click(function () {
         $('.weather-view, .projects-view').fadeToggle('900', 'swing');
     });
-    
     // Random Quotes Details View
-    $('.random-back').click(function(){
+    $('.random-back').click(function () {
         $('.random-view, .projects-view').fadeToggle('900', 'swing');
     });
-    
     // Tribute Page Details View
-    $('.tribute-back').click(function(){
+    $('.tribute-back').click(function () {
         $('.tribute-view, .projects-view').fadeToggle('900', 'swing');
     });
-    
-    
-    
     //GSAP
     TweenMax.to('.spinner', 5, {
         x: 0
@@ -54,7 +43,6 @@ $(document).ready(function () {
         , scale: 1
         , delay: 2
     });
-
     //scrollmagic
     var controller = new ScrollMagic.Controller();
     //navbar
@@ -75,7 +63,10 @@ $(document).ready(function () {
     }).setClassToggle('#code-skills', 'code-skills').addTo(controller);
     var coffee = new ScrollMagic.Scene({
         triggerElement: '.skills'
-    }).setClassToggle('#coffee', 'coffee').addTo(controller);
+    }).setClassToggle('#design', 'design').addTo(controller);
+    var guitar = new ScrollMagic.Scene({
+        triggerElement: '.skills'
+    }).setClassToggle('#guitar', 'guitar').addTo(controller);
     var dancing = new ScrollMagic.Scene({
         triggerElement: '.skills'
     }).setClassToggle('#dancing', 'dancing').addTo(controller);
