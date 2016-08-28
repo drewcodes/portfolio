@@ -169,7 +169,7 @@ body {
     height: 100%;
     width: 0%;
     border-radius: 20px;
-    background-color: #eb5e5e;
+    background-color: #5693b9;
 }
 
 #code-skills.code-skills {
@@ -225,9 +225,6 @@ body {
     /*Bottom padding of the site*/
 }
 
-.email-contact {
-    font-size: 20px;
-}
 
 .email-contact > a {
     color: white;
@@ -262,8 +259,12 @@ body {
     color: #c7c7c7;
 }
 
-.red-text {
-    color: #eb5e5e;
+.blue-text {
+    color: #00b0ff;
+}
+
+.orange-text {
+    color:darkorange;
 }
 
 #contact-icons {
