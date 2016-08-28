@@ -173,12 +173,17 @@ body {
 }
 
 #code-skills.code-skills {
-    width: 90%;
+    width: 95%;
     transition: all 2s ease-out;
 }
 
-#coffee.coffee {
-    width: 50%;
+#design.design {
+    width: 80%;
+    transition: all 2s ease-out;
+}
+
+#guitar.guitar {
+    width: 95%;
     transition: all 2s ease-out;
 }
 
@@ -199,7 +204,7 @@ body {
 
 #skill-list {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 70px;
     font-size: 20px;
     color: #535353;
 }
