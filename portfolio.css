@@ -73,7 +73,7 @@ body {
 
 .jumbotron {
     height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.12)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/v5aPy5_HieqktnHFrQh2BNSpUq4Nj958J4bAbO0HDLZz7mZrik58hb6_VTG_Nq-at3ibt8k6ATTqtfB0VzKb90eLMhQY8qPS3KcK-XmZzoc8TB73t8GvLgEhRtwkcNBmlCsGKbF9XWxhQ6IZcGw0uFFE3X8mcB6YFZugp5w1DlaePUGIWXwscFyGgghD3d6HzSnOhlcZ3HdFBP88FZ0m4HhZa7eRN_GJ93daJIshJKWj1E77yy6zdfJnJa1-9FavjxoTp0YpRSESmJQOFFVEjlwVsIPtR31HNQs5SK4jWUvmkjyWaR__D0iMhU-yUIk2mzn-E6vkV73yqjmqLcKnWhVuvNPSbcG8xcalBScaUyke1cq_mCpCJH8FkgsCMrRY3cgf8W31P2KFdq6QW_bfUxhoWfwinuKmhmrL30cSIdfgf9c5IVJ1WHkhmKaLGi3Ml-tsVME9YaZ4yhoWQF8W3EctgQDtrBowpz91o3GjzLD1pnWVJ2AX63HNNEqHRqF4aumI_tombs45MGyREusb-pMXFR-X3Z33UNg07fKESRHfqFgu5aaE5ccuvoNm0T61b2UAIFWsV7iwL5yjz8xtAMlthlZcFBerbpbs-OHE0gkvmnSV=w1172-h659-no?.jpeg') no-repeat center;
+    background: linear-gradient(rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.05)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/v5aPy5_HieqktnHFrQh2BNSpUq4Nj958J4bAbO0HDLZz7mZrik58hb6_VTG_Nq-at3ibt8k6ATTqtfB0VzKb90eLMhQY8qPS3KcK-XmZzoc8TB73t8GvLgEhRtwkcNBmlCsGKbF9XWxhQ6IZcGw0uFFE3X8mcB6YFZugp5w1DlaePUGIWXwscFyGgghD3d6HzSnOhlcZ3HdFBP88FZ0m4HhZa7eRN_GJ93daJIshJKWj1E77yy6zdfJnJa1-9FavjxoTp0YpRSESmJQOFFVEjlwVsIPtR31HNQs5SK4jWUvmkjyWaR__D0iMhU-yUIk2mzn-E6vkV73yqjmqLcKnWhVuvNPSbcG8xcalBScaUyke1cq_mCpCJH8FkgsCMrRY3cgf8W31P2KFdq6QW_bfUxhoWfwinuKmhmrL30cSIdfgf9c5IVJ1WHkhmKaLGi3Ml-tsVME9YaZ4yhoWQF8W3EctgQDtrBowpz91o3GjzLD1pnWVJ2AX63HNNEqHRqF4aumI_tombs45MGyREusb-pMXFR-X3Z33UNg07fKESRHfqFgu5aaE5ccuvoNm0T61b2UAIFWsV7iwL5yjz8xtAMlthlZcFBerbpbs-OHE0gkvmnSV=w1172-h659-no?.jpeg') no-repeat center;
     background-size: cover;
     margin-top: -50px;
     color: white;
@@ -169,7 +169,7 @@ body {
     height: 100%;
     width: 0%;
     border-radius: 20px;
-    background-color: #ff971e;
+    background-color: #eb5e5e;
 }
 
 #code-skills.code-skills {
@@ -262,8 +262,8 @@ body {
     color: #c7c7c7;
 }
 
-.orange-text {
-    color: #ff8c00;
+.red-text {
+    color: #eb5e5e;
 }
 
 #contact-icons {
