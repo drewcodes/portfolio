@@ -202,9 +202,9 @@ body {
     margin-left: 10px;
 }
 
-#skill-list {
+.skill-list {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 35px;
     font-size: 20px;
     color: #535353;
 }
