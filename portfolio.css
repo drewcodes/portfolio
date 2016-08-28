@@ -89,8 +89,6 @@ body {
 }
 
 
-
-
 /*Portfolio Section*/
 
 .portfolio {
@@ -197,6 +195,13 @@ body {
 .level-number {
     color: white;
     margin-left: 10px;
+}
+
+#skill-list {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #535353;
 }
 
 
