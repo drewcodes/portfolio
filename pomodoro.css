@@ -1,0 +1,48 @@
+body {
+    background-color: #65c5f0;
+    font-family: 'Hind Guntur';
+    color: white;
+    margin: 20px;
+}
+
+.timer-wrapper {
+    padding-top: 55px;
+    height: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background: -webkit-radial-gradient(center, rgba(255, 187, 96, 0.99) 0%, rgb(255, 128, 0) 70%);
+    border-radius: 60px;
+    border: 8px solid #d83a00;
+    box-shadow: 10px 10px 20px #6a6a6a;
+}
+
+h3 {
+    display: inline;
+    margin: 10px;
+}
+
+#start {
+    margin: 20px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.buttons {
+    background-color: #d83e3e;
+    border-radius: 5px;
+}
+
+
+/*Timer*/
+
+#num.enlarge {
+    font-size: 60px;
+    font-family: Heiti SC;
+    transition: all 0.5s ease-out;
+    background-color: #000000;
+    color: #97db86;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
