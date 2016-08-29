@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.moy-view, .twitch-view, .wiki-view, .weather-view, .random-view, .tribute-view').hide();
+    $('.moy-view, .twitch-view, .wiki-view, .weather-view, .random-view, .tribute-view, .bakery-view,  .pomodoro-view').hide();
     // Moy Details View
     $('.moy-back').click(function () {
         $('.moy-view, .projects-view').fadeToggle('900', 'swing');
@@ -23,6 +23,14 @@ $(document).ready(function () {
     // Tribute Page Details View
     $('.tribute-back').click(function () {
         $('.tribute-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    // Bakery Concept Details View
+    $('.bakery-back').click(function () {
+        $('.bakery-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    // Pomodoro Clock Details View
+    $('.pomodoro-back').click(function () {
+        $('.pomodoro-view, .projects-view').fadeToggle('900', 'swing');
     });
     //GSAP
     TweenMax.to('.spinner', 5, {
