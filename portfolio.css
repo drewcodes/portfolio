@@ -111,7 +111,8 @@ body {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 12px;
-    border: 1px solid #c1c1c1;
+    border: 2px solid #e6e6e6;
+    box-shadow: 5px 5px 10px #9f9f9f;
 }
 
 #languages {
@@ -169,7 +170,7 @@ body {
     height: 100%;
     width: 0%;
     border-radius: 20px;
-    background-color: #5693b9;
+    background-color: #56b980;
 }
 
 #code-skills.code-skills {
@@ -214,7 +215,7 @@ body {
 
 .contact {
     padding: 25px;
-    background-color: #1c1c1c;
+    background-color: #313131;
     color: white;
 }
 
@@ -261,10 +262,6 @@ body {
 
 .blue-text {
     color: #00b0ff;
-}
-
-.orange-text {
-    color:darkorange;
 }
 
 #contact-icons {
