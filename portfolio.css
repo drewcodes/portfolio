@@ -73,7 +73,7 @@ body {
 
 .jumbotron {
     height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.05)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/HkOMI_7J1WFINfyIkdaE3ibsxEO3r3GpXG4_5n0DFJHty7nrc3IsPQ_F42_BNacLy0uZdr3CskmJ6dLtCSr-MMBN3mBZwyZZT83QIBjWoP7lrzsnTdxzZ35C-B_Da5uy9a79N-kEJZbOMhPzi9y87mhCf4KotNBxKmL4Nv-ZrAsBbvn32xi_WGw5_Wdmkwd2e51KiH01-WFEUmZmWfPUJtFj58cK2WFo0d4WMmsu0cKklBtty12hm8EHys0J_tVBtloxAh4HEwS2qBtTdK1fKCfekjMTryeyxXwHgn8o19NRzm0rOCoksGlijMjSNt-32rQ7CnjJvp87HQzkLqRBFC_2Vb2IpkiboJ-7lt3AzMwY0c4XxM1hlqXLx9n4jfKQBmIdgen94QqelbjMu-3PUZOpc2IMYRWju5xikM-LvQPNySXZI13M7I3viJYBIex0F5DxI_AMS5SNaHXnOcnbcmQPDQIa8-FR4p1gvV-_tzwgxLcYfO-1fzXsaP8v33IRqnQBjR4A2_gSKItGC6mgHqznmhsnnk---I2VQ8_7O3landDSZ9pEEPNzkSg8RFRaPpgkKBji_e5GBBIZoU9377kADSUNlOQ=w989-h659-no?.jpg') no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.46)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/HkOMI_7J1WFINfyIkdaE3ibsxEO3r3GpXG4_5n0DFJHty7nrc3IsPQ_F42_BNacLy0uZdr3CskmJ6dLtCSr-MMBN3mBZwyZZT83QIBjWoP7lrzsnTdxzZ35C-B_Da5uy9a79N-kEJZbOMhPzi9y87mhCf4KotNBxKmL4Nv-ZrAsBbvn32xi_WGw5_Wdmkwd2e51KiH01-WFEUmZmWfPUJtFj58cK2WFo0d4WMmsu0cKklBtty12hm8EHys0J_tVBtloxAh4HEwS2qBtTdK1fKCfekjMTryeyxXwHgn8o19NRzm0rOCoksGlijMjSNt-32rQ7CnjJvp87HQzkLqRBFC_2Vb2IpkiboJ-7lt3AzMwY0c4XxM1hlqXLx9n4jfKQBmIdgen94QqelbjMu-3PUZOpc2IMYRWju5xikM-LvQPNySXZI13M7I3viJYBIex0F5DxI_AMS5SNaHXnOcnbcmQPDQIa8-FR4p1gvV-_tzwgxLcYfO-1fzXsaP8v33IRqnQBjR4A2_gSKItGC6mgHqznmhsnnk---I2VQ8_7O3landDSZ9pEEPNzkSg8RFRaPpgkKBji_e5GBBIZoU9377kADSUNlOQ=w989-h659-no?.jpg') no-repeat center;
     background-size: cover;
     margin-top: -50px;
     color: white;
@@ -225,7 +225,6 @@ body {
     padding-bottom: 50px;
     /*Bottom padding of the site*/
 }
-
 
 .email-contact > a {
     color: white;
