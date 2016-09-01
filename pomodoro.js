@@ -21,6 +21,7 @@ $(document).ready(function () {
                 alert("Time's up!");
                 clearInterval(countdown);
                 var startBreak = setInterval(breakTimer, 1000);
+                breakTime *= 60;
                 $('#num').hide();
             }
             // Seconds to Mins Conversion
@@ -42,7 +43,14 @@ $(document).ready(function () {
                     $('#reset-pomo').show();
                     $('#breakNum, #active-time').hide();
                 }
-                $('#breakNum').html(breakTime);
+                // Seconds to Mins Conversion
+                if (breakTime % 60 >= 10) {
+                    $('#breakNum').html(Math.floor(breakTime / 60) + ":" + breakTime % 60);
+                }
+                else {
+                    // need this statement to correctly display numbers
+                    $('#breakNum').html(Math.floor(breakTime / 60) + ":" + '0' + breakTime % 60);
+                }
             }
         }
     });
@@ -53,6 +61,7 @@ $(document).ready(function () {
         $('#num').html(time);
         $('#breakNum').html(breakTime);
         $('#pomodoro-time, #break-time, #num, #breakNum, #pomodoro-minus-five, #pomodoro-plus-five, #break-minus-five, #break-plus-five, #start').show();
+        $('#num').removeClass('enlarge');
         $('#reset-pomo').hide();
     });
     // Pomodoro Clock Session Increment & Decrement Buttons
