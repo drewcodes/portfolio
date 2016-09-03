@@ -231,6 +231,28 @@ body {
     text-decoration: none;
 }
 
+.social-links {
+    list-style: none;
+    font-size: 20px;
+    display: inline-flex;
+    color: white;
+    margin-left: -40px;
+}
+
+.social-links li {
+    margin: 10px;
+}
+
+.social-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 
 /*MISC Styling*/
 
