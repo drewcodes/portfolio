@@ -36,6 +36,7 @@ $(document).ready(function () {
                     logo = 'https://lh3.googleusercontent.com/jFPail7ytkrnoNO-Qd9iIzsASZ_lgN89_RYdIeSrQWTRcqgYMrIjJOWfIJOYYU4loB-c3OjhorGPU5ckDriea3zzasPMSotRATKE1Ywj5y7vjiUcKROvpMNY9_F0UzRy-bIjjat4AQpdoK6rt9n8QS_Y7Hde6qb8wBoPvIcU9rWpekRswjS3s-OQpkOp36BsX5HtcTs2yzMfDUDzukiZlVKV6GMGibczh9pJpLk1lGI-AjGFalX3mxv_Ty2NJEXWfbwouxQF8rp7awU4PwWI6T9JszGf-pS33wh8EH1hOcZXpyoR3Sc65bCNc6OQGYv0qK7_eTF-JUKiFzm6lycymC2sRyKWNTghnYoaEgc27aSI-roUlRB3Vkfpk-8Obx6pbtj051zXDxWOw9zXLQaOzb4pWfFndZlHshhRGiRD2p4YiOCtyHk-kn8gP0ydzvjj2vDBiw3pOm1cnQbIi1ai1WBT6RZYQ0rIi0lr6v5NGz5KKr3NZdPAxHFu5VdIIWvwutVEqn7YH5Pb3wfCVB5R5uspvG_G9tHnbz9ycUUw0dBL7BDGWuwA2WBUVAgBagr4kSrffXfTnTsCNs66byWT0w2fGYnasA0=s600-no?.jpg';
                     $(".unavailable-display").append("<div class='user unavailable-user container-fluid'>" + "<div class='grey grey-user'></div>" + "<img src='" + logo + "'>" + ' ' + data2.message + "</div>");
                 }
+                
                 // Channels Offline
                 if (data2.stream === null) {
                     $.getJSON(data2._links.channel, function (data3) {
