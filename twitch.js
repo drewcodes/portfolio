@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Array to store freeCodeCamp followers
     var following = [];
     // freeCodeCamp Status
-    $.getJSON('https://api.twitch.tv/kraken/streams/freecodecamp', function (data1) {
+    $.getJSON('https://api.twitch.tv/kraken/streams/freecodecamp/?client_id=stx0vf6630i98it42m35z77qwov5euu', function (data1) {
         if (data1.stream === null) {
             $("#fcc-status").html("<p style='color:red;'>Free Code Camp is currently OFFLINE</p>");
         }
@@ -11,7 +11,7 @@ $(document).ready(function () {
         }
     });
     // API for who freeCodeCamp follows
-    $.getJSON('https://api.twitch.tv/kraken/users/freecodecamp/follows/channels/', function (data) {
+    $.getJSON('https://api.twitch.tv/kraken/users/freecodecamp/follows/channels/?client_id=stx0vf6630i98it42m35z77qwov5euu', function (data) {
         for (var i = 0; i < data.follows.length; i++) {
             // display names
             var displayName = data.follows[i].channel.display_name;
@@ -26,7 +26,7 @@ $(document).ready(function () {
         following.push('Cryaotic');
         
         for (var i = 0; i < following.length; i++) {
-            var url2 = 'https://api.twitch.tv/kraken/streams/' + following[i] + '/?callback=?';
+            var url2 = 'https://api.twitch.tv/kraken/streams/' + following[i] + '/?client_id=stx0vf6630i98it42m35z77qwov5euu&callback=?';
             var channelURL = 'https://www.twitch.tv/';
             $.getJSON(url2).done(function (data2) {
                 var logo;
