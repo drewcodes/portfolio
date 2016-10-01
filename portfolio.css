@@ -11,6 +11,7 @@ body {
     color: white;
 }
 
+
 /*Nav Styling*/
 
 .navbar {
@@ -98,29 +99,6 @@ body {
 }
 
 
-/*Portfolio Section*/
-
-.portfolio {
-    padding: 25px;
-    color: white;
-    background: rgba(0, 0, 0, 0.09);
-}
-
-.project-img {
-    display: inline-table;
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 12px;
-    border: 2px solid #e6e6e6;
-}
-
-#languages {
-    font-size: 18px;
-}
-
-
 /*About*/
 
 .about {
@@ -166,7 +144,7 @@ body {
     height: 100%;
     width: 0%;
     border-radius: 20px;
-    background-color: #d3ae5b;
+    background-color: #edb943;
 }
 
 #code-skills.code-skills {
@@ -201,9 +179,32 @@ body {
 
 .skill-list {
     text-align: center;
-    margin-top: 35px;
+    margin-top: 55px;
     font-size: 20px;
     color: white;
+}
+
+
+/*Portfolio Section*/
+
+.portfolio {
+    padding: 25px;
+    color: white;
+    background: rgba(0, 0, 0, 0.09);
+}
+
+.project-img {
+    display: inline-table;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    border: 2px solid #e6e6e6;
+}
+
+#languages {
+    font-size: 18px;
 }
 
 
