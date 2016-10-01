@@ -1,17 +1,9 @@
 body {
     padding-top: 50px;
     font-family: Muli, Verdana, Arial;
-    background: linear-gradient(rgba(147, 147, 147, 0.49), rgba(168, 168, 168, 0.27)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/tGDtYfyRbmOx1M2e_fxIxKp1z0EVMB6OQ3kNFcnUA8uNgmlRTyIQ-QCW4EwYjOp_dk8mAxnULr-sP2VN8BZulse3XktnP5QVZ-FY8nbjiSUyOzvWrxvV37o09Q-jnUdCHMF37LoI1f2QEflR77bbnaSnpbS0_piD06Hp2nNMcb_fYWOzhNXHb1iGDNFksNUXdIXNln_tIU38Z1SEy_1treVTslzcLcJyIrhAqpSZ661k_TlTE25uCveWL1Qz0GuPowUDCXcfjVwKfGzUKftjq_WeIGeLVASCRyaXVTzrEyKIGa4TfEMYapFC7pVRdpe8PSrATUI78v2VzdGFcr0ahUYTkYhox2JunSniUpM5DUdhFToYb2Upk9Ap2zhIOubGTCgQ3Q3-_C2Fu2JI1T22QABfMsKaI-cDRk6-R4Cj6jUpzKpDVT2KYvhuRgAFCINZbuUmMSTU0N2LdvrYqSbueeSSCmtBr3nH0bSWxlYh1oLW6H26YSVOnR8WN1jA4ILOW2u_b-kgVluElixh5AsuBT0OLqtq0hyY7bbi3HUH3ai1QW-FLlguXiJubyAb9FwYvX37r5KtwmrGXqiYiy4u66LaWjHXUGMSpDMu5NrpurMOr8rN=w1251-h704-no?.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+    background-color: white;
+    color: black;
 }
-
-
 
 
 /*Nav Styling*/
@@ -81,7 +73,8 @@ body {
 
 .jumbotron {
     height: 100vh;
-    background: rgba(255, 255, 255, 0);
+    background: linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.46)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/HkOMI_7J1WFINfyIkdaE3ibsxEO3r3GpXG4_5n0DFJHty7nrc3IsPQ_F42_BNacLy0uZdr3CskmJ6dLtCSr-MMBN3mBZwyZZT83QIBjWoP7lrzsnTdxzZ35C-B_Da5uy9a79N-kEJZbOMhPzi9y87mhCf4KotNBxKmL4Nv-ZrAsBbvn32xi_WGw5_Wdmkwd2e51KiH01-WFEUmZmWfPUJtFj58cK2WFo0d4WMmsu0cKklBtty12hm8EHys0J_tVBtloxAh4HEwS2qBtTdK1fKCfekjMTryeyxXwHgn8o19NRzm0rOCoksGlijMjSNt-32rQ7CnjJvp87HQzkLqRBFC_2Vb2IpkiboJ-7lt3AzMwY0c4XxM1hlqXLx9n4jfKQBmIdgen94QqelbjMu-3PUZOpc2IMYRWju5xikM-LvQPNySXZI13M7I3viJYBIex0F5DxI_AMS5SNaHXnOcnbcmQPDQIa8-FR4p1gvV-_tzwgxLcYfO-1fzXsaP8v33IRqnQBjR4A2_gSKItGC6mgHqznmhsnnk---I2VQ8_7O3landDSZ9pEEPNzkSg8RFRaPpgkKBji_e5GBBIZoU9377kADSUNlOQ=w989-h659-no?.jpg') no-repeat center;
+    background-size: cover;
     margin-top: -50px;
     color: white;
     text-shadow: 3px 3px 10px black;
@@ -95,17 +88,20 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#name {
-    text-transform: uppercase;
-}
-
 
 /*Portfolio Section*/
 
 .portfolio {
     padding: 25px;
-    color: white;
-    background: rgba(0, 0, 0, 0.09);
+    background-color: white;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-out;
+}
+
+.portfolio.fade-in {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .project-img {
@@ -116,6 +112,7 @@ body {
     margin-top: 20px;
     margin-bottom: 12px;
     border: 2px solid #e6e6e6;
+    box-shadow: 5px 5px 10px #9f9f9f;
 }
 
 #languages {
@@ -126,10 +123,16 @@ body {
 /*About*/
 
 .about {
-    height: 100%;
     padding: 25px;
-    background-color: #45698d;
-    color: white;
+    background-color: #e6e6e6;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.about.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about-section {
@@ -145,8 +148,7 @@ body {
 /*Skills Section*/
 
 .skills {
-    padding: 20px;
-    background-color: #45698d;
+    padding: 20px 20px 20px 20px;
 }
 
 .skills-chart {
@@ -168,7 +170,7 @@ body {
     height: 100%;
     width: 0%;
     border-radius: 20px;
-    background-color: #5bd377;
+    background-color: #3dacc6;
 }
 
 #code-skills.code-skills {
@@ -205,7 +207,7 @@ body {
     text-align: center;
     margin-top: 35px;
     font-size: 20px;
-    color: white;
+    color: #535353;
 }
 
 
@@ -213,7 +215,7 @@ body {
 
 .contact {
     padding: 25px;
-    background-color: #45698d;
+    background-color: #313131;
     color: white;
 }
 
@@ -273,6 +275,10 @@ body {
 
 .fjalla {
     font-family: 'Fjalla One';
+}
+
+.grey-text {
+    color: #c7c7c7;
 }
 
 .blue-text {
