@@ -1,7 +1,7 @@
 body {
     padding-top: 50px;
     font-family: Muli, Verdana, Arial;
-    background: linear-gradient(rgba(147, 147, 147, 0.49), rgba(168, 168, 168, 0.27)), rgba(0, 0, 0, 0.51) url('https://lh3.googleusercontent.com/tGDtYfyRbmOx1M2e_fxIxKp1z0EVMB6OQ3kNFcnUA8uNgmlRTyIQ-QCW4EwYjOp_dk8mAxnULr-sP2VN8BZulse3XktnP5QVZ-FY8nbjiSUyOzvWrxvV37o09Q-jnUdCHMF37LoI1f2QEflR77bbnaSnpbS0_piD06Hp2nNMcb_fYWOzhNXHb1iGDNFksNUXdIXNln_tIU38Z1SEy_1treVTslzcLcJyIrhAqpSZ661k_TlTE25uCveWL1Qz0GuPowUDCXcfjVwKfGzUKftjq_WeIGeLVASCRyaXVTzrEyKIGa4TfEMYapFC7pVRdpe8PSrATUI78v2VzdGFcr0ahUYTkYhox2JunSniUpM5DUdhFToYb2Upk9Ap2zhIOubGTCgQ3Q3-_C2Fu2JI1T22QABfMsKaI-cDRk6-R4Cj6jUpzKpDVT2KYvhuRgAFCINZbuUmMSTU0N2LdvrYqSbueeSSCmtBr3nH0bSWxlYh1oLW6H26YSVOnR8WN1jA4ILOW2u_b-kgVluElixh5AsuBT0OLqtq0hyY7bbi3HUH3ai1QW-FLlguXiJubyAb9FwYvX37r5KtwmrGXqiYiy4u66LaWjHXUGMSpDMu5NrpurMOr8rN=w1251-h704-no?.jpg');
+    background: #578eb7;
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -77,7 +77,7 @@ body {
 /*Welcome Message Section*/
 
 .jumbotron {
-    height: 100vh;
+    height: 50vh;
     background: rgba(255, 255, 255, 0);
     margin-top: -50px;
     color: white;
@@ -87,9 +87,10 @@ body {
 
 .welcome-msg {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Abel';
 }
 
 #name {
@@ -165,7 +166,7 @@ body {
     height: 100%;
     width: 0%;
     border-radius: 20px;
-    background-color: #5bd377;
+    background-color: #d3ae5b;
 }
 
 #code-skills.code-skills {
