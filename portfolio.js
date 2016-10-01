@@ -38,13 +38,29 @@ $(document).ready(function () {
         , rotation: 360
         , repeat: 100
     });
+    TweenMax.from('#msg1', 1.5, {
+        opacity: 0
+    });
+    TweenMax.from('#msg2', 1, {
+        opacity: 0
+        , delay: 1
+    });
+    TweenMax.from('#msg3', 1, {
+        y: -20
+        , opacity: 0
+        , scale: 1
+        , delay: 2
+    });
     //scrollmagic
     var controller = new ScrollMagic.Controller();
     //navbar
     var navbar = new ScrollMagic.Scene({
-        triggerElement: '.about'
+        triggerElement: '.portfolio'
     }).setClassToggle('.navbar', 'fade-in').addTo(controller);
-    
+    // portfolio scene
+    var portfolio = new ScrollMagic.Scene({
+        triggerElement: '.portfolio'
+    }).setClassToggle('.portfolio', 'fade-in').addTo(controller);
     //about scene
     var about = new ScrollMagic.Scene({
         triggerElement: '.about'
