@@ -1,0 +1,161 @@
+body {
+  background-color:#fff4d6;
+  margin-top: 50px;
+}
+
+/*Display In-line Block*/
+.dib {
+  display: inline-block;
+}
+
+.game-wrapper {
+  height: 388px;
+  width: 400px;
+  background-color: black;
+  border-radius: 100%;
+  text-align: center;
+  margin: auto;
+  positon: relative;
+  padding-top: 20px;
+  box-shadow: 10px 10px 100px black;
+  box-shadow: inset 5px 5px 50px grey;
+}
+
+.green {
+  height: 180px;
+  width: 180px;
+  background: #278438;
+  border-top-left-radius : 100%;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.red {
+  height: 180px;
+  width: 180px;
+  background: #842727;
+  border-top-right-radius : 100%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.yellow {
+  height: 180px;
+  width: 180px;
+  background: #847e27;
+  border-bottom-left-radius : 100%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.blue {
+  height: 180px;
+  width: 180px;
+  background: #275d84;
+  border-bottom-right-radius : 100%;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.simon {
+  font-family: Bungee;
+  font-size: 30px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+#reg {
+  font-size: 18px;
+}
+
+/*Controls*/
+.controls {
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+  background-color: #e5e7ea;
+  border: 10px solid black;
+  position: relative;
+  margin-top: -285px;
+  margin-left: 102px;
+  box-shadow: inset 0px 0px 80px grey;
+}
+
+.round-number {
+  background-color: #333333;
+  border-radius: 5px;
+  color: red;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  margin: 10px;
+  line-height: 2em;
+}
+
+.start-button {
+  background-color: #af453a;
+  color: white;
+  border-radius: 10px;
+  height: 23px;
+  width: 50px;
+  display: inline-block;
+}
+
+.strict-button {
+  background-color: #c6c561;
+  color: white;
+  border-radius: 10px;
+  height: 23px;
+  width: 50px;
+}
+
+.power {
+  height: 20px;
+  width: 50px;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-left: 60px;
+}
+
+.power-toggle {
+  height: 20px;
+  width:20px;
+  background-color: grey;
+}
+
+#on-off{
+  font-family: Bungee;
+  font-size: 9px;
+}
+
+.float-right {
+  float: right;
+}
+
+.credits {
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  font-family: Bungee;
+}
+
+.credits a {
+  color: #4286f4;
+}
+
+.green.brighten {
+  background-color: #42f445;
+}
+
+.red.brighten {
+  background-color: #f44242;
+}
+
+.yellow.brighten {
+  background-color: #f4f142;
+}
+
+.blue.brighten {
+  background-color: #42a4f4;
+}
