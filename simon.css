@@ -1,5 +1,5 @@
 body {
-  background-color:#fff4d6;
+  background-color: #e2ceb5;
   margin-top: 50px;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 #reg {
-  font-size: 18px;
+  font-size: 25px;
 }
 
 /*Controls*/
@@ -81,22 +81,24 @@ body {
   box-shadow: inset 0px 0px 80px grey;
 }
 
-.round-number {
+.counter {
   background-color: #333333;
+  font-family: Tahoma;
   border-radius: 5px;
-  color: red;
+  color: #f45c42;
   height: 35px;
   width: 35px;
   display: inline-block;
   margin: 10px;
-  line-height: 2em;
+  line-height: 1.7em;
+  font-size: 20px;
 }
 
 .start-button {
   background-color: #af453a;
   color: white;
   border-radius: 10px;
-  height: 23px;
+  height: 25px;
   width: 50px;
   display: inline-block;
 }
@@ -105,23 +107,34 @@ body {
   background-color: #c6c561;
   color: white;
   border-radius: 10px;
-  height: 23px;
+  height: 25px;
   width: 50px;
 }
 
-.power {
-  height: 20px;
-  width: 50px;
+.strict-light {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
   background-color: black;
-  border: 2px solid black;
-  border-radius: 4px;
-  margin-left: 60px;
+  border: 1px solid black;
+  display: inline-block;
 }
 
-.power-toggle {
+.power-button {
+  font-family: Bungee;
+  background-color: #98aeb7;
   height: 20px;
-  width:20px;
-  background-color: grey;
+  width: 60px;
+  border-radius: 4px;
+}
+
+.power-light {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid black;
+  display: inline-block;
 }
 
 #on-off{
@@ -145,17 +158,25 @@ body {
 }
 
 .green.brighten {
-  background-color: #42f445;
+  background-color: white;
+  box-shadow: inset 30px 30px 100px #42f445;
 }
 
 .red.brighten {
-  background-color: #f44242;
+  background-color: white;
+  box-shadow: inset -30px 30px 100px #f44242;
 }
 
 .yellow.brighten {
-  background-color: #f4f142;
+  background-color: white;
+  box-shadow: inset 30px -30px 100px #f4f142;
 }
 
 .blue.brighten {
-  background-color: #42a4f4;
+  background-color: white;
+  box-shadow: inset -30px -30px 100px #42a4f4;
 }
+
+/* Buttons Active Inactive */
+.game-button { pointer-events: none; }
+.game-button.active { pointer-events: auto; }
