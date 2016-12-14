@@ -64,7 +64,7 @@ $(document).ready(function () {
         light = 500;
         counter = 0;
         $('.counter').html(counter);
-        $('.game-button').addClass('active');
+     //==================================================
         setTimeout(function () {
             compMove();
             animate();
