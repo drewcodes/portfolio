@@ -1,5 +1,9 @@
 $(document).ready(function () {
-    $('.moy-view, .twitch-view, .wiki-view, .weather-view, .random-view, .tribute-view, .bakery-view,  .pomodoro-view').hide();
+    $('.simon-view, .moy-view, .twitch-view, .wiki-view, .weather-view, .random-view, .tribute-view, .bakery-view,  .pomodoro-view').hide();
+    // Simon Details View
+    $('.simon-back').click(function () {
+        $('.simon-view, .projects-view').fadeToggle('900', 'swing');
+    });
     // Moy Details View
     $('.moy-back').click(function () {
         $('.moy-view, .projects-view').fadeToggle('900', 'swing');
