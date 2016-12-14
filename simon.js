@@ -108,7 +108,7 @@ $(document).ready(function () {
     // Colored buttons configurations
     function red() {
         if (counter >= 4) light = 350;
-        if (counter >= 8) light = 1225;
+        if (counter >= 8) light = 225;
         if (counter >= 12) light = 175;
         $(".red").addClass("brighten");
         window.setTimeout(function () {
