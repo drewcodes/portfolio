@@ -209,8 +209,8 @@ $(document).ready(function () {
             // Length check - Delays the next animation/round until player finishes inputting a sequence of equal length
             if (player.length === compMoves.length) {
                 // If true, player passes round
+                $('.game-button').removeClass('active');
                 setTimeout(function () {
-                    $('.game-button').removeClass('active');
                     player = [];
                     if (win === false) {
                         counter += 1;
