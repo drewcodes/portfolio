@@ -108,8 +108,8 @@ $(document).ready(function () {
     // Colored buttons configurations
     function red() {
         if (counter >= 4) light = 350;
-        if (counter >= 8) light = 125;
-        if (counter >= 12) light = 160;
+        if (counter >= 8) light = 1225;
+        if (counter >= 12) light = 175;
         $(".red").addClass("brighten");
         window.setTimeout(function () {
             $(".red").removeClass("brighten");
@@ -120,7 +120,7 @@ $(document).ready(function () {
     function green() {
         if (counter >= 4) light = 350;
         if (counter >= 8) light = 225;
-        if (counter >= 12) light = 160;
+        if (counter >= 12) light = 175;
         $(".green").addClass("brighten");
         window.setTimeout(function () {
             $(".green").removeClass("brighten");
@@ -131,7 +131,7 @@ $(document).ready(function () {
     function blue() {
         if (counter >= 4) light = 350;
         if (counter >= 8) light = 225;
-        if (counter >= 12) light = 160;
+        if (counter >= 12) light = 175;
         $(".blue").addClass("brighten");
         window.setTimeout(function () {
             $(".blue").removeClass("brighten");
@@ -142,7 +142,7 @@ $(document).ready(function () {
     function yellow() {
         if (counter >= 4) light = 350;
         if (counter >= 8) light = 225;
-        if (counter >= 12) light = 160;
+        if (counter >= 12) light = 175;
         $(".yellow").addClass("brighten");
         window.setTimeout(function () {
             $(".yellow").removeClass("brighten");
