@@ -33,7 +33,6 @@ $(document).ready(function () {
         else {
             power = false;
             $('.power-light').css('background', "black");
-            $('.game-button').removeClass('active');
             powerOff();
         }
     });
@@ -47,6 +46,7 @@ $(document).ready(function () {
         $('.counter').html("--");
         strict = false;
         $('.strict-light').css('background', "black");
+        $('.game-button').removeClass('active');
     }
     // Start Button
     $('.start-button').click(function () {
