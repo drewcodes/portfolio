@@ -1,30 +1,13 @@
 $(document).ready(function () {
-    //Audio files
+    // Game Configuration
+    // Audio files
     var audio1 = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
     var audio2 = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');
     var audio3 = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');
     var audio4 = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');
     var audioBuzzer = new Audio('https://s3-us-west-2.amazonaws.com/guylemon/Buzzer.mp3');
-    //COUNTER
-    var counter = 0;
-    //GAME LOGIC AND CONFIGURATION========================
     //Win or Lost
     var win = false;
-    
-    //Power Button
-    var power = false;
-    $('.power-button').click(function () {
-      if(power === false){
-        power = true;
-        $('.power-light').css('background', "red");
-      } else {
-        power = false;
-        $('.power-light').css('background', "black");
-        $('.game-button').removeClass('active');
-        powerOff();
-      }
-    });
-    
     //Arr for player to input their moves.
     var player = [];
     //comp seq used to animate, play game and compare player seq against
@@ -33,10 +16,45 @@ $(document).ready(function () {
     var compPosition = 0;
     //Arr for random generated sequence to push into
     var computer = [];
+    //COUNTER
+    var counter = 0;
+    // Strict Toggle
+    var strict = false;
     //Game Speed Time
     var speed = 1000;
-    
-    //Start/Restart Function
+    //Color Light Speed
+    var light = 500;
+    // Power Button
+    var power = false;
+    $('.power-button').click(function () {
+        if (power === false) {
+            power = true;
+            $('.power-light').css('background', "red");
+        }
+        else {
+            power = false;
+            $('.power-light').css('background', "black");
+            $('.game-button').removeClass('active');
+            powerOff();
+        }
+    });
+
+    function powerOff() {
+        win = false;
+        computer = [];
+        compMoves = [];
+        player = [];
+        $('.counter').html("--");
+        strict = false;
+        $('.strict-light').css('background', "black");
+    }
+    // Start Button
+    $('.start-button').click(function () {
+        if (power === true) {
+            startRestart();
+        }
+    });
+    // Start/Restart Function
     function startRestart() {
         win = false;
         computer = [];
@@ -50,54 +68,36 @@ $(document).ready(function () {
             compMove();
             animate();
             counter += 1;
-            $('.counter').html(counter);            
+            $('.counter').html(counter);
         }, 1500);
     }
-  
-  function powerOff(){
-        win = false;
-        computer = [];
-        compMoves = [];
-        player = [];
-        $('.counter').html("--");
-        strict = false;
-        $('.strict-light').css('background', "black");    
-  }
-  
-    //Start Button
-    $('.start-button').click(function () {
-        if(power === true){
-          startRestart();
-        }
-    });
-  
-    //Strict Button
-    var strict = false;
-    //when true, if wrong input => call strict() to reset everything
+    // Strict Button
+    // when true, if wrong input => call strict() to reset everything
     $('.strict-button').click(function () {
-        if(power === true){
-          if (strict == false) {
-            startRestart();
-            $('.strict-light').css('background', "red");
-            strict = true;
+        if (power === true) {
+            if (strict == false) {
+                startRestart();
+                $('.strict-light').css('background', "red");
+                strict = true;
+            }
+            else {
+                startRestart();
+                $('.strict-light').css('background', "black");
+                strict = false;
+            }
         }
         else {
-            startRestart();
             $('.strict-light').css('background', "black");
             strict = false;
         }
-        } else {
-          $('.strict-light').css('background', "black");
-            strict = false;
-        }
     });
-    //comp seq starts (random 20 moves get picked and pushed into the computer arr)
+    //Generate Computer Moves
     function generate20Moves() {
         for (var i = 0; i < 20; i++) {
             computer.push(Math.floor(Math.random() * 4 + 1));
         }
     }
-    //Allows comp to add one additional move to its sequence
+    // Pushes random move into computer sequence array
     function compMove() {
         if (compPosition <= 19) {
             //pushes just ONE value from computer arr into compMoves
@@ -106,39 +106,51 @@ $(document).ready(function () {
             compPosition += 1;
         }
     }
-    //Colors, buttons and configurations
+    // Colored buttons configurations
     function red() {
+        if (counter >= 4) light = 350;
+        if (counter >= 8) light = 125;
+        if (counter >= 12) light = 160;
         $(".red").addClass("brighten");
         window.setTimeout(function () {
             $(".red").removeClass("brighten");
-        }, 500);
+        }, light);
         audio1.play();
     }
 
     function green() {
+        if (counter >= 4) light = 350;
+        if (counter >= 8) light = 225;
+        if (counter >= 12) light = 160;
         $(".green").addClass("brighten");
         window.setTimeout(function () {
             $(".green").removeClass("brighten");
-        }, 500);
+        }, light);
         audio2.play();
     }
 
     function blue() {
+        if (counter >= 4) light = 350;
+        if (counter >= 8) light = 225;
+        if (counter >= 12) light = 160;
         $(".blue").addClass("brighten");
         window.setTimeout(function () {
             $(".blue").removeClass("brighten");
-        }, 500);
+        }, light);
         audio3.play();
     }
 
     function yellow() {
+        if (counter >= 4) light = 350;
+        if (counter >= 8) light = 225;
+        if (counter >= 12) light = 160;
         $(".yellow").addClass("brighten");
         window.setTimeout(function () {
             $(".yellow").removeClass("brighten");
-        }, 500);
+        }, light);
         audio4.play();
     }
-    // Decides which color lights up and sound to play
+    // Decides which color lights up
     function playSounds(num) {
         if (num === 1) {
             red();
@@ -153,7 +165,7 @@ $(document).ready(function () {
             yellow();
         }
     }
-    //Animate computer sequence and play
+    // Animate computer sequence and play
     function animate() {
         if (win === false) {
             if (counter >= 4) speed = 800;
@@ -166,8 +178,8 @@ $(document).ready(function () {
             });
         }
     }
-    //Controls buttons being pressable or not
-        $('.red').click(function () {
+    // Config for player sequence input. Runs check logic.
+    $('.red').click(function () {
         player.push(1);
         red();
         check();
@@ -187,13 +199,13 @@ $(document).ready(function () {
         yellow();
         check();
     });
-
+    // Main Simon logic. Checks player's sequence against computer's sequence.
     function check() {
-        //compare inputs
+        // Compare player's inputs
         if (player[player.length - 1] == compMoves[player.length - 1]) {
-            //compare lengths
+            // Length check - Delays the next animation/round until player finishes inputting a sequence of equal length
             if (player.length === compMoves.length) {
-                //if true, pass
+                // If true, player passes round
                 setTimeout(function () {
                     player = [];
                     if (win === false) {
@@ -203,8 +215,7 @@ $(document).ready(function () {
                     compMove();
                     animate();
                 }, 1500);
-                
-                //Checks for Winner
+                //Checks for winner after 20 rounds
                 if (counter === 20) {
                     //turn off animate()
                     win = true;
@@ -214,6 +225,7 @@ $(document).ready(function () {
             }
         }
         else {
+            // Strict mode ON - Any wrong player input, game restarts from round one.
             audioBuzzer.play();
             if (strict === true) {
                 setTimeout(function () {
@@ -221,7 +233,7 @@ $(document).ready(function () {
                 }, 1500);
             }
             else {
-                console.log("Wrong. Your seq was: " + player + ". " + "Comp seq was: " + compMoves);
+                // Strict mode OFF - Player makes wrong input, animation replays. Player gets another chance.
                 setTimeout(function () {
                     player = [];
                     animate();
