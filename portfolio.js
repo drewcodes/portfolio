@@ -1,12 +1,8 @@
 $(document).ready(function () {
-    $('.simon-view, .moy-view, .twitch-view, .wiki-view, .weather-view, .random-view, .tribute-view, .bakery-view,  .pomodoro-view').hide();
+    $('.simon-view, .twitch-view, .wiki-view, .weather-view, .random-view, .moy-view, .tribute-view, .bakery-view,  .pomodoro-view').hide();
     // Simon Details View
     $('.simon-back').click(function () {
         $('.simon-view, .projects-view').fadeToggle('900', 'swing');
-    });
-    // Moy Details View
-    $('.moy-back').click(function () {
-        $('.moy-view, .projects-view').fadeToggle('900', 'swing');
     });
     // Twitch Details View
     $('.twitch-back').click(function () {
@@ -23,6 +19,10 @@ $(document).ready(function () {
     // Random Quotes Details View
     $('.random-back').click(function () {
         $('.random-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    // Moy Details View
+    $('.moy-back').click(function () {
+        $('.moy-view, .projects-view').fadeToggle('900', 'swing');
     });
     // Tribute Page Details View
     $('.tribute-back').click(function () {
