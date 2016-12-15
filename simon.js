@@ -224,6 +224,9 @@ $(document).ready(function () {
                     win = true;
                     audioBuzzer.play();
                     alert("You win!");
+                    setTimeout(function(){
+                        startRestart();
+                    }, 2000);
                 }
             }
         }
