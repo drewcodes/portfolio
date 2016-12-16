@@ -1,8 +1,12 @@
 $(document).ready(function () {
-    $('.simon-view, .calculator-view, .twitch-view, .wiki-view, .weather-view, .random-view, .moy-view, .tribute-view, .bakery-view,  .pomodoro-view').hide();
+    $('.simon-view, .pomodoro-view, .calculator-view, .twitch-view, .wiki-view, .weather-view, .random-view, .moy-view, .tribute-view, .bakery-view').hide();
     // Simon Details View
     $('.simon-back').click(function () {
         $('.simon-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    // Pomodoro Clock Details View
+    $('.pomodoro-back').click(function () {
+        $('.pomodoro-view, .projects-view').fadeToggle('900', 'swing');
     });
     // Calculator Details View
     $('.calculator-back').click(function () {
@@ -36,10 +40,6 @@ $(document).ready(function () {
     $('.bakery-back').click(function () {
         $('.bakery-view, .projects-view').fadeToggle('900', 'swing');
     });
-    // Pomodoro Clock Details View
-    $('.pomodoro-back').click(function () {
-        $('.pomodoro-view, .projects-view').fadeToggle('900', 'swing');
-    });
     //GSAP
     TweenMax.to('.spinner', 5, {
         x: 0
@@ -52,7 +52,6 @@ $(document).ready(function () {
     var navbar = new ScrollMagic.Scene({
         triggerElement: '.about'
     }).setClassToggle('.navbar', 'fade-in').addTo(controller);
-    
     //about scene
     var about = new ScrollMagic.Scene({
         triggerElement: '.about'
