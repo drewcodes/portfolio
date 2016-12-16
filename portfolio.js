@@ -1,8 +1,12 @@
 $(document).ready(function () {
-    $('.simon-view, .twitch-view, .wiki-view, .weather-view, .random-view, .moy-view, .tribute-view, .bakery-view,  .pomodoro-view').hide();
+    $('.simon-view, .calculator-view, .twitch-view, .wiki-view, .weather-view, .random-view, .moy-view, .tribute-view, .bakery-view,  .pomodoro-view').hide();
     // Simon Details View
     $('.simon-back').click(function () {
         $('.simon-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    // Calculator Details View
+    $('.calculator-back').click(function () {
+        $('.calculator-view, .projects-view').fadeToggle('900', 'swing');
     });
     // Twitch Details View
     $('.twitch-back').click(function () {
