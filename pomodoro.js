@@ -2,42 +2,29 @@ $(document).ready(function () {
     //Hide reset buttons until is up.
     $('.reset').hide();
     $('.stop-pause').hide();
-  
-  
     // vars for actual time
     var time = parseInt($('#num').html());
     var breakTime = parseInt($('#breakNum').html());
-  
-  
-  
-  var countingDown = true;
-  
+    var countingDown = true;
     //Start button
     $('#start').click(function () {
         var countdown = setInterval(seconds, 1000);
         time *= 60;
-      
         var stop = false;
-        
-      //stop pause button
-          function stopPause(){
+        // Timer stop button
+        function stopPause() {
             clearInterval(countdown);
-          }
-  
-          $('.stop-pause').click(function(){
-              if(stop === false){
+        }
+        $('.stop-pause').click(function () {
+            if (stop === false) {
                 stop = true;
                 stopPause();
                 $('.stop-pause').hide();
                 $('.reset').show();
-              }
-          });
-          
-          //
-          
-
+            }
+        });
+        //
         function seconds() {
-          
             // Hide buttons
             $('#start, #pomodoro-minus-five, #pomodoro-plus-five, #break-minus-five, #break-plus-five, #breakNum, #pomodoro-time, #break-time').hide();
             // Enlarge Timer
@@ -46,8 +33,6 @@ $(document).ready(function () {
             $('#active-time').html('Time Left:');
             $('.stop-pause').show();
             time -= 1;
-          
-          
             if (time === 0) {
                 alert("Time's up!");
                 clearInterval(countdown);
@@ -55,8 +40,6 @@ $(document).ready(function () {
                 breakTime *= 60;
                 $('#num').hide();
             }
-          
-          
             // Seconds to Mins Conversion
             if (time % 60 >= 10) {
                 $('#num').html(Math.floor(time / 60) + ":" + time % 60);
@@ -65,8 +48,6 @@ $(document).ready(function () {
                 // need this statement to correctly display numbers
                 $('#num').html(Math.floor(time / 60) + ":" + '0' + time % 60);
             }
-          
-          
             //Break Timer
             function breakTimer() {
                 $('#active-time').show();
@@ -89,30 +70,6 @@ $(document).ready(function () {
             }
         }
     });
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
     //Reset Button
     $('#reset-pomo').click(function () {
         time = 25;
