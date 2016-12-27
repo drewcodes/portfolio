@@ -57,7 +57,7 @@ body {
 }
 
 #logo {
-    max-width: 300px;
+    width: 150px%;
 }
 
 #nav-title {
@@ -106,11 +106,6 @@ body {
     }
     .collapse.in {
         display: block !important;
-    }
-    
-    #logo {
-        max-width: 30%;
-        min-width: 220px;
     }
 }
 
