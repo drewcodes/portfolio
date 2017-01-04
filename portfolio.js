@@ -1,8 +1,12 @@
 $(document).ready(function () {
-    $('.simon-view, .pomodoro-view, .calculator-view, .twitch-view, .wiki-view, .weather-view, .random-view, .moy-view, .tribute-view, .bakery-view').hide();
+    $('.simon-view, .tic-tac-toe-view, .pomodoro-view, .calculator-view, .twitch-view, .wiki-view, .weather-view, .random-view, .moy-view, .tribute-view, .bakery-view').hide();
     // Simon Details View
     $('.simon-back').click(function () {
         $('.simon-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    // Tic Tac Toe Details View
+    $('.tic-tac-toe-back').click(function () {
+        $('.tic-tac-toe-view, .projects-view').fadeToggle('900', 'swing');
     });
     // Pomodoro Clock Details View
     $('.pomodoro-back').click(function () {
