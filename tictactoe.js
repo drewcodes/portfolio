@@ -35,6 +35,10 @@ $(document).ready(function(){
         reset();
     });
     
+    $('.reset').click(function(){
+       reset(); 
+    });
+    
     function computerTurn(){
         // Var to break while loop
         var taken = false;
