@@ -39,8 +39,11 @@ $(document).ready(function () {
     $('.reset').click(function () {
         reset();
     });
+    
+    $('.player-move').addClass('active');
 
     function computerTurn() {
+        $('.player-move').removeClass('active');
         $('#thinking').html('Computer is thinking...');
         // Var to break while loop
         var taken = false;
@@ -56,6 +59,7 @@ $(document).ready(function () {
                     taken = true;
                     turns[computersMove] = computersTurn;
                     winCondition(turns, computersTurn);
+                    $('.player-move').addClass('active');
                 }
             }
         }, 800);
