@@ -21,6 +21,7 @@ $(document).ready(function () {
     $('#turnX').click(function () {
         turn = "X";
         computersTurn = "O";
+        $('.player-move').addClass('active');
         $('#turnX').html('Player is X');
         $('#turnO').html('Computer is O');
         $('#turnX').css('background-color', '#73b970');
@@ -30,6 +31,7 @@ $(document).ready(function () {
     $('#turnO').click(function () {
         turn = "O";
         computersTurn = "X";
+        $('.player-move').addClass('active');
         $('#turnX').html('Computer is X');
         $('#turnO').html('Player is O');
         $('#turnX').css('background-color', 'black');
@@ -39,8 +41,6 @@ $(document).ready(function () {
     $('.reset').click(function () {
         reset();
     });
-    
-    $('.player-move').addClass('active');
 
     function computerTurn() {
         $('.player-move').removeClass('active');
