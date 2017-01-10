@@ -22,8 +22,6 @@ body {
     margin: auto;
     position: relative;
     padding-top: 20px;
-    box-shadow: 10px 10px 100px black;
-    box-shadow: inset 5px 5px 50px grey;
 }
 
 .simon {
@@ -41,12 +39,11 @@ body {
     height: 180px;
     width: 180px;
     border-radius: 100%;
-    background-color: #e5e7ea;
+    background-color: #d4d4d4;
     border: 10px solid black;
     position: relative;
     margin-top: -285px;
     margin-left: 102px;
-    box-shadow: inset 0px 0px 80px grey;
 }
 
 .counter {
