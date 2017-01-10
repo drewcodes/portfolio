@@ -1,23 +1,26 @@
 body {
-    background-color: black;
+    background-color: #004a76;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
 .game-wrapper {
-    margin: 10px;
+    margin-top: 30px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .player {
-    background-color: #73b970;
+    background-color: #3c3c3c;
     border-color: black;
     color: white;
-    width: 120px;
     font-size: 12px;
+    border-radius: 20%;
 }
 
 .reset {
-    background-color: #c39d00;
+    background-color: #db6060;
     color: white;
 }
 
@@ -26,8 +29,8 @@ body {
     height: 80px;
     width: 80px;
     background-color:#ffffff;
-    border-color: black;
-    color: white;
+    margin-bottom: 3px;
+    color: #404040;
 }
 
 .player-move {
@@ -36,4 +39,29 @@ body {
 
 .player-move.active {
     pointer-events: auto;
+}
+
+.wrapper {
+  width: 300px;
+  margin-top: 40px;
+  border-radius: 10px;
+  background-color: #298aa8;
+}
+
+.messages {
+    background-color: black;
+    height: 40px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #484848;
+    margin-top: 10px;
+}
+
+#thinking {
+    color: #ce4747;
+}
+
+a {
+    color: white;
 }
