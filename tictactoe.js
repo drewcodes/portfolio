@@ -15,27 +15,25 @@ $(document).ready(function () {
         count = 0;
         $('.tic').text(' ');
         gameOn = false;
+        $('.player-move').addClass('active');
         $('.tic').css('background-color', '#ffffff');
+        $('#thinking').html('');
     }
     // Toggle player's position (X or O)
     $('#turnX').click(function () {
         turn = "X";
         computersTurn = "O";
         $('.player-move').addClass('active');
-        $('#turnX').html('Player is X');
-        $('#turnO').html('Computer is O');
-        $('#turnX').css('background-color', '#73b970');
-        $('#turnO').css('background-color', 'black');
+        $('#turnX').css('background-color', '#45c362');
+        $('#turnO').css('background-color', '#3c3c3c');
         reset();
     });
     $('#turnO').click(function () {
         turn = "O";
         computersTurn = "X";
         $('.player-move').addClass('active');
-        $('#turnX').html('Computer is X');
-        $('#turnO').html('Player is O');
-        $('#turnX').css('background-color', 'black');
-        $('#turnO').css('background-color', '#73b970');
+        $('#turnX').css('background-color', '#3c3c3c');
+        $('#turnO').css('background-color', '#45c362');
         reset();
     });
     $('.reset').click(function () {
@@ -58,7 +56,6 @@ $(document).ready(function () {
                 var move = $('#' + computersMove).text();
                 if (move === ' ') {
                     $('#' + computersMove).text(computersTurn);
-                    $('#' + computersMove).css('background-color', '#d3c300');
                     taken = true;
                     turns[computersMove] = computersTurn;
                     winCondition(turns, computersTurn);
@@ -74,7 +71,6 @@ $(document).ready(function () {
             count++;
             turns[id] = turn;
             $('#' + id).text(turn);
-            $('#' + id).css('background-color', '#4295ba');
             winCondition(turns, turn);
             if (gameOn === false) {
                 computerTurn();
@@ -86,59 +82,59 @@ $(document).ready(function () {
     function winCondition(turnArray, currentTurn) {
         if (turnArray[0] === currentTurn && turnArray[1] === currentTurn && turnArray[2] === currentTurn) {
             gameOn = true;
+            $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset();
-                alert('Player ' + currentTurn + ' wins!');
-            }, 300);
+            }, 1200);
         }
         else if (turnArray[3] === currentTurn && turnArray[4] === currentTurn && turnArray[5] === currentTurn) {
             gameOn = true;
+            $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset();
-                alert('Player ' + currentTurn + ' wins!');
-            }, 300);
+            }, 1200);
         }
         else if (turnArray[6] === currentTurn && turnArray[7] === currentTurn && turnArray[8] === currentTurn) {
             gameOn = true;
+            $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset();
-                alert('Player ' + currentTurn + ' wins!');
-            }, 300);
+            }, 1200);
         }
         else if (turnArray[0] === currentTurn && turnArray[4] === currentTurn && turnArray[8] === currentTurn) {
             gameOn = true;
+            $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset();
-                alert('Player ' + currentTurn + ' wins!');
-            }, 300);
+            }, 1200);
         }
         else if (turnArray[2] === currentTurn && turnArray[4] === currentTurn && turnArray[6] === currentTurn) {
             gameOn = true;
+            $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset();
-                alert('Player ' + currentTurn + ' wins!');
-            }, 300);
+            }, 1200);
         }
         else if (turnArray[0] === currentTurn && turnArray[3] === currentTurn && turnArray[6] === currentTurn) {
             gameOn = true;
+            $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset();
-                alert('Player ' + currentTurn + ' wins!');
-            }, 300);
+            }, 1200);
         }
         else if (turnArray[1] === currentTurn && turnArray[4] === currentTurn && turnArray[7] === currentTurn) {
             gameOn = true;
+            $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset();
-                alert('Player ' + currentTurn + ' wins!');
-            }, 300);
+            }, 1200);
         }
         else if (turnArray[2] === currentTurn && turnArray[5] === currentTurn && turnArray[8] === currentTurn) {
             gameOn = true;
+            $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset();
-                alert('Player ' + currentTurn + ' wins!');
-            }, 300);
+            }, 1500);
         }
         else {
             gameOn = false;
