@@ -47,6 +47,9 @@ $(document).ready(function () {
         $('#thinking').html('Computer is thinking...');
         // Var to break while loop
         var taken = false;
+      
+        var thinking = ((Math.random() * 1000)+200).toFixed();
+      
         setTimeout(function () {
             $('#thinking').html('');
             while (taken === false && count !== 5) {
@@ -62,7 +65,7 @@ $(document).ready(function () {
                     $('.player-move').addClass('active');
                 }
             }
-        }, 800);
+        }, thinking);
     }
 
     function playerTurn(turn, id) {
