@@ -28,7 +28,7 @@ body {
     font-size: 50px;
     height: 80px;
     width: 80px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     margin-bottom: 3px;
     color: #404040;
 }
@@ -42,10 +42,10 @@ body {
 }
 
 .wrapper {
-  width: 300px;
-  margin-top: 40px;
-  border-radius: 10px;
-  background-color: #298aa8;
+    width: 300px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: #298aa8;
 }
 
 .messages {
@@ -64,4 +64,10 @@ body {
 
 a {
     color: white;
+}
+
+.scores {
+    margin-top: 10px;
+    font-size: 12px;
+    display: block;
 }
