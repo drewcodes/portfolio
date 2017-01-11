@@ -19,6 +19,10 @@ body {
     border-radius: 20%;
 }
 
+.player:hover {
+  color: white;
+}
+
 .reset {
     background-color: #db6060;
     color: white;
