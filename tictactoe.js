@@ -26,6 +26,7 @@ $(document).ready(function () {
         $('#player').html('0');
         $('#computer').html('0');
     }
+    
     // Reset when tied
     function reset2() {
         turns = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
@@ -36,6 +37,7 @@ $(document).ready(function () {
         $('.tic').css('background-color', '#ffffff');
         $('#thinking').html('');
     }
+    
     // Toggle player's position (X or O)
     $('#turnX').click(function () {
         turn = "X";
@@ -44,6 +46,7 @@ $(document).ready(function () {
         $('#turnX').css('background-color', '#45c362');
         $('#turnO').css('background-color', '#3c3c3c');
         reset();
+        $('#thinking').html("Player's turn!");
     });
     $('#turnO').click(function () {
         turn = "O";
@@ -52,24 +55,34 @@ $(document).ready(function () {
         $('#turnX').css('background-color', '#3c3c3c');
         $('#turnO').css('background-color', '#45c362');
         reset();
+        $('#thinking').html("Player's turn!");
     });
+    
+    
+    // Reset Button
     $('.reset').click(function () {
         reset();
     });
 
     function computerTurn() {
         $('.player-move').removeClass('active');
-        $('#thinking').html('Computer is thinking...');
+        $('#thinking').css('color','#e24646');
+        $('#thinking').html("Computer's turn. Thinking...");
         // Var to break while loop
         var taken = false;
         var thinking = ((Math.random() * 1000) + 200).toFixed();
         // EDITS
         if (count === 5) {
             reset2();
+            $('#thinking').css('color','yellow');
+            $('#thinking').html('Tie!');
+            setTimeout(function(){
+                $('#thinking').html('');
+            }, 1200);
         }
         else {
             setTimeout(function () {
-                $('#thinking').html('');
+                $('#thinking').html("");
                 while (taken === false && count !== 5) {
                     // Generate random turn
                     var computersMove = (Math.random() * 10).toFixed();
@@ -80,6 +93,8 @@ $(document).ready(function () {
                         turns[computersMove] = computersTurn;
                         winCondition(turns, computersTurn);
                         $('.player-move').addClass('active');
+                        $('#thinking').css('color','#00ff27');
+                        $('#thinking').html("Player's turn!");
                     }
                 }
             }, thinking);
