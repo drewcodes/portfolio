@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html>
-
 <header>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,44 +11,37 @@
 <body>
     <div class="wrapper container text-center">
         <h1>tic tac toe</h1>
-        <p>Pick X or O to Start</p>
-        <a class="btn player" id="turnX">X</a>
-        <a class="btn player" id="turnO">O</a>
-        <a class="btn reset" id="reset">Reset</a>
-    <div class="game-wrapper">
-    
-        
-        <div class="row">
-            <div class="col-md-12">
-                <a class="btn tic player-move" id="0"> </a>
-                <a class="btn tic player-move" id="1"> </a>
-                <a class="btn tic player-move" id="2"> </a>
+        <p>Pick X or O to Start</p> <a class="btn player" id="turnX">X</a> <a class="btn player" id="turnO">O</a> <a class="btn reset" id="reset">Reset</a>
+        <div class="game-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="btn tic player-move" id="0"> </a>
+                    <a class="btn tic player-move" id="1"> </a>
+                    <a class="btn tic player-move" id="2"> </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="btn tic player-move" id="3"> </a>
+                    <a class="btn tic player-move" id="4"> </a>
+                    <a class="btn tic player-move" id="5"> </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="btn tic player-move" id="6"> </a>
+                    <a class="btn tic player-move" id="7"> </a>
+                    <a class="btn tic player-move" id="8"> </a>
+                </div>
+            </div>
+            <div class="scores">
+                <p>PLAYER: <span id="player">0</span></p>
+                <p>COMPUTER: <span id="computer">0</span></p>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-12">
-                <a class="btn tic player-move" id="3"> </a>
-                <a class="btn tic player-move" id="4"> </a>
-                <a class="btn tic player-move" id="5"> </a>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-12">
-                <a class="btn tic player-move" id="6"> </a>
-                <a class="btn tic player-move" id="7"> </a>
-                <a class="btn tic player-move" id="8"> </a>
-            </div>
-        </div>
-        
-    </div>
         <div class="messages">
-            <h5 id="thinking"></h5>
-        </div>
-        <h6>Coded by <a href="http://www.drewcodes.io/" id="link">drewcodes</a></h6>
-    </div>
-    
+            <h5 id="thinking"></h5> </div>
+        <h6>Coded by <a href="http://www.drewcodes.io/" id="link">drewcodes</a></h6> </div>
 </body>
 
 </html>
