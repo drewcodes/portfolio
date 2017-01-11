@@ -26,7 +26,6 @@ $(document).ready(function () {
         $('#player').html('0');
         $('#computer').html('0');
     }
-    
     // Reset when tied
     function reset2() {
         turns = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
@@ -35,9 +34,9 @@ $(document).ready(function () {
         gameOn = false;
         $('.player-move').addClass('active');
         $('.tic').css('background-color', '#ffffff');
-        $('#thinking').html('');
+        $('#thinking').css('color', '#00ff27');
+        $('#thinking').html("Player's turn!");
     }
-    
     // Toggle player's position (X or O)
     $('#turnX').click(function () {
         turn = "X";
@@ -57,8 +56,6 @@ $(document).ready(function () {
         reset();
         $('#thinking').html("Player's turn!");
     });
-    
-    
     // Reset Button
     $('.reset').click(function () {
         reset();
@@ -66,7 +63,7 @@ $(document).ready(function () {
 
     function computerTurn() {
         $('.player-move').removeClass('active');
-        $('#thinking').css('color','#e24646');
+        $('#thinking').css('color', '#e24646');
         $('#thinking').html("Computer's turn. Thinking...");
         // Var to break while loop
         var taken = false;
@@ -74,9 +71,9 @@ $(document).ready(function () {
         // EDITS
         if (count === 5) {
             reset2();
-            $('#thinking').css('color','yellow');
+            $('#thinking').css('color', 'yellow');
             $('#thinking').html('Tie!');
-            setTimeout(function(){
+            setTimeout(function () {
                 $('#thinking').html('');
             }, 1200);
         }
@@ -93,8 +90,10 @@ $(document).ready(function () {
                         turns[computersMove] = computersTurn;
                         winCondition(turns, computersTurn);
                         $('.player-move').addClass('active');
-                        $('#thinking').css('color','#00ff27');
-                        $('#thinking').html("Player's turn!");
+                        if (gameOn === false) {
+                            $('#thinking').css('color', '#00ff27');
+                            $('#thinking').html("Player's turn!");
+                        }
                     }
                 }
             }, thinking);
@@ -118,6 +117,7 @@ $(document).ready(function () {
     function winCondition(turnArray, currentTurn) {
         if (turnArray[0] === currentTurn && turnArray[1] === currentTurn && turnArray[2] === currentTurn) {
             gameOn = true;
+            $('#thinking').css('color', '#ffc400');
             $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset2();
@@ -134,6 +134,7 @@ $(document).ready(function () {
         }
         else if (turnArray[3] === currentTurn && turnArray[4] === currentTurn && turnArray[5] === currentTurn) {
             gameOn = true;
+            $('#thinking').css('color', '#ffc400');
             $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset2();
@@ -150,6 +151,7 @@ $(document).ready(function () {
         }
         else if (turnArray[6] === currentTurn && turnArray[7] === currentTurn && turnArray[8] === currentTurn) {
             gameOn = true;
+            $('#thinking').css('color', '#ffc400');
             $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset2();
@@ -166,6 +168,7 @@ $(document).ready(function () {
         }
         else if (turnArray[0] === currentTurn && turnArray[4] === currentTurn && turnArray[8] === currentTurn) {
             gameOn = true;
+            $('#thinking').css('color', '#ffc400');
             $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset2();
@@ -182,6 +185,7 @@ $(document).ready(function () {
         }
         else if (turnArray[2] === currentTurn && turnArray[4] === currentTurn && turnArray[6] === currentTurn) {
             gameOn = true;
+            $('#thinking').css('color', '#ffc400');
             $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset2();
@@ -198,6 +202,7 @@ $(document).ready(function () {
         }
         else if (turnArray[0] === currentTurn && turnArray[3] === currentTurn && turnArray[6] === currentTurn) {
             gameOn = true;
+            $('#thinking').css('color', '#ffc400');
             $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset2();
@@ -214,6 +219,7 @@ $(document).ready(function () {
         }
         else if (turnArray[1] === currentTurn && turnArray[4] === currentTurn && turnArray[7] === currentTurn) {
             gameOn = true;
+            $('#thinking').css('color', '#ffc400');
             $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset2();
@@ -230,6 +236,7 @@ $(document).ready(function () {
         }
         else if (turnArray[2] === currentTurn && turnArray[5] === currentTurn && turnArray[8] === currentTurn) {
             gameOn = true;
+            $('#thinking').css('color', '#ffc400');
             $('#thinking').html(currentTurn + ' wins!');
             setTimeout(function () {
                 reset2();
