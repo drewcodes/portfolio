@@ -63,15 +63,26 @@ body {
 }
 
 #thinking {
-    color: #ce4747;
+    color: #00ff27;
 }
 
 a {
-    color: white;
+    color: #eb8e8e;
 }
 
 .scores {
     margin-top: 10px;
     font-size: 12px;
     display: block;
+    padding: 0px 12px 3px 12px;
+    width: 270px;
+    color: white;
+}
+
+#playerScore {
+    float: left;
+}
+
+#computerScore {
+    float: right;
 }
