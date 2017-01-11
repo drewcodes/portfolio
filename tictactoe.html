@@ -12,6 +12,15 @@
     <div class="wrapper container text-center">
         <h1>tic tac toe</h1>
         <p>Pick X or O to Start</p> <a class="btn player" id="turnX">X</a> <a class="btn player" id="turnO">O</a> <a class="btn reset" id="reset">Reset</a>
+        
+        <div class="messages">
+            <h5 id="thinking"></h5> 
+        </div>
+        
+        <div class="scores">
+                <p><span id="playerScore">PLAYER: <span id="player">0</span></span><span id="computerScore">COMPUTER: <span id="computer">0</span></span></p>
+        </div>
+        
         <div class="game-wrapper">
             <div class="row">
                 <div class="col-md-12">
@@ -34,13 +43,8 @@
                     <a class="btn tic player-move" id="8"> </a>
                 </div>
             </div>
-            <div class="scores">
-                <p>PLAYER: <span id="player">0</span></p>
-                <p>COMPUTER: <span id="computer">0</span></p>
-            </div>
+            
         </div>
-        <div class="messages">
-            <h5 id="thinking"></h5> </div>
         <h6>Coded by <a href="http://www.drewcodes.io/" id="link">drewcodes</a></h6> </div>
 </body>
 
