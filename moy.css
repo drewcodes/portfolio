@@ -57,7 +57,7 @@ body {
 }
 
 #logo {
-    width: 150px%;
+    width: 280px;
 }
 
 #nav-title {
@@ -231,6 +231,10 @@ body {
 .classes.fade-in {
     opacity: 1;
     transform: translateY(0);
+}
+
+.class-info {
+    padding-left:15px;
 }
 
 
