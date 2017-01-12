@@ -11,6 +11,10 @@ body {
     color: white;
 }
 
+.font-fjalla {
+    font-family: 'Fjalla One';
+}
+
 
 /*Nav Styling*/
 
@@ -30,14 +34,12 @@ body {
 .navbar-default .navbar-nav > li > a {
     background-color: inherit;
     color: white;
-    text-shadow: 5px 5px 10px black;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     background-color: transparent;
     color: white;
-    text-shadow: 5px 5px 10px black;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -48,8 +50,12 @@ body {
 #nav-logo {
     margin-left: 10px;
     color: white;
-    text-shadow: 5px 5px 10px black;
     font-family: 'Abel';
+}
+
+.nav-logo {
+    height: 20px;
+    float: left;
 }
 
 
@@ -94,6 +100,10 @@ body {
     font-family: 'Abel';
 }
 
+.random-facts {
+    font-size: 15px;
+}
+
 #name {
     text-transform: uppercase;
 }
@@ -125,7 +135,12 @@ body {
     margin-right: auto;
 }
 
+
 /*Skills Section*/
+
+.demo {
+    margin: 15px;
+}
 
 .skills {
     padding: 20px;
@@ -196,6 +211,7 @@ body {
 
 .back-button {
     color: black;
+    margin: 15px;
 }
 
 .portfolio {
@@ -245,6 +261,10 @@ body {
     display: inline-flex;
     color: white;
     margin-left: -50px;
+}
+
+#phone {
+    color: white;
 }
 
 .social-links li {
