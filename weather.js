@@ -10,7 +10,7 @@ $(document).ready(function(){
     lon = yourLocation.lon;
     
     //API
-    var api = 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid=1c998cd7939b1c9031ba503704852c7b';
+    var api = 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid=0d8cb05a7bab59856011d598a0126a63';
     
     $.getJSON(api, function(data) {
       
