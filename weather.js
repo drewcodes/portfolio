@@ -58,17 +58,7 @@ function capitalizeWord(str) {
       });
       
       //Background Image Changes
-      if (tempF >= 70) {
-        $('body').css('background-image', 'url(https://farm3.staticflickr.com/2163/2253563721_e6ced7a5c7.jpg)')
-      } else if (tempF < 70 && tempF >= 50) {
-        $('body').css('background-image', 'url(https://images.unsplash.com/photo-1421091242698-34f6ad7fc088?crop=entropy&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300)')
-      } else if (tempF < 50 && tempF >= 40) {
-        $('body').css('background-image', 'url(https://images.unsplash.com/photo-1445561696415-deadc6a2adaa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=283323ef56689fd7d1ee25f01f113e6d)')
-      } else if (tempF > 39) {
-        $('body').css('background-image', 'url(https://images.unsplash.com/photo-1414170562806-9d670e90c091?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=f8c6383e1ce6e90ad9713d119ab8e34f)')
-      } else {
-        $('body').css('background-image', 'url(https://images.unsplash.com/photo-1414170562806-9d670e90c091?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=f8c6383e1ce6e90ad9713d119ab8e34f)')
-      }
+      
     });
   });
   });
