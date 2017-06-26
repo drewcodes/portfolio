@@ -57,8 +57,6 @@ function capitalizeWord(str) {
         
       });
       
-      //Background Image Changes
-      
-    });
+   
   });
   });
