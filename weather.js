@@ -1,6 +1,3 @@
-// THIS ONE WORKS!
-
-
 $(document).ready(function(){
 // Geo Location Vars
 var lat;
