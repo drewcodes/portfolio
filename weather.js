@@ -1,19 +1,18 @@
 $(document).ready(function(){
-// Geo Location Vars
-var lat;
-var lon;
+  //Created variables to represent coordinates.
+  var lat;
+  var lon;
 
-// Get Geo Location
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function(position) {
-    lat = position.coords.latitude;
-    lon = position.coords.longitude;
+  //this getJSON calls for the coordinates via an API. The rest of the code executes within this call function to display the JSON object data.
+  $.getJSON('https://cors-anywhere.herokuapp.com//http://ip-api.com/json', function(yourLocation){
 
+    lat = yourLocation.lat;
+    lon = yourLocation.lon;
 
-    var api = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid=0d8cb05a7bab59856011d598a0126a63';
+    //API
+    var api = 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid=0d8cb05a7bab59856011d598a0126a63'+'?callback=?';
 
-
-$.getJSON(api, function(data) {
+    $.getJSON(api, function(data) {
 
       //All variables for current weather data
       var city = data.name;
@@ -55,8 +54,19 @@ function capitalizeWord(str) {
           $('#tempNow').html(fTemp);
           tempToggle = true;
         }
+
       });
+
+      //Background Image Changes
+      if (tempF >= 70) {
+        $('body').css('background-image', 'url(https://images.unsplash.com/photo-1421091242698-34f6ad7fc088?crop=entropy&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300)')
+      } else if (tempF < 70 && tempF >= 50) {
+        $('body').css('background-image', 'url(https://images.unsplash.com/photo-1421091242698-34f6ad7fc088?crop=entropy&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300)')
+      } else if (tempF < 50 && tempF >= 40) {
+        $('body').css('background-image', 'url(https://images.unsplash.com/photo-1445561696415-deadc6a2adaa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=283323ef56689fd7d1ee25f01f113e6d)')
+      } else if (tempF > 39) {
+        $('body').css('background-image', 'url(https://images.unsplash.com/photo-1414170562806-9d670e90c091?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=f8c6383e1ce6e90ad9713d119ab8e34f)')
+      }
     });
-  }); // Geo Location
-}
-}); // Document Ready
+  });
+  });
