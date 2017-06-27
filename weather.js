@@ -58,12 +58,8 @@ function capitalizeWord(str) {
           $('#tempNow').html(fTemp);
           tempToggle = true;
         }
-
       });
-
-});
-
+    });
   }); // Geo Location
 }
-
 }); // Document Ready
