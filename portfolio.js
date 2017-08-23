@@ -4,6 +4,10 @@ $(document).ready(function () {
     $('.simon-back').click(function () {
         $('.simon-view, .projects-view').fadeToggle('900', 'swing');
     });
+    // YelpCamp Details View
+    $('.yelpCamp-back').click(function () {
+        $('.yelpCamp-view, .projects-view').fadeToggle('900', 'swing');
+    });
     // Tic Tac Toe Details View
     $('.tic-tac-toe-back').click(function () {
         $('.tic-tac-toe-view, .projects-view').fadeToggle('900', 'swing');
