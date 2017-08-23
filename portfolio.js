@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.simon-view, .tic-tac-toe-view, yelpCamp-view .pomodoro-view, .calculator-view, .twitch-view, .wiki-view, .weather-view, .random-view, .moy-view, .tribute-view, .bakery-view').hide();
+    $('.simon-view, .tic-tac-toe-view, yelpCamp-view, .pomodoro-view, .calculator-view, .twitch-view, .wiki-view, .weather-view, .random-view, .moy-view, .tribute-view, .bakery-view').hide();
     // Simon Details View
     $('.simon-back').click(function () {
         $('.simon-view, .projects-view').fadeToggle('900', 'swing');
