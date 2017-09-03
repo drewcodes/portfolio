@@ -1,8 +1,12 @@
 $(document).ready(function () {
-    $('.simon-view, .tic-tac-toe-view, .yelpCamp-view, .pomodoro-view, .calculator-view, .twitch-view, .wiki-view, .weather-view, .random-view, .moy-view, .tribute-view, .bakery-view').hide();
+    $('.simon-view, .30-sites-30-days-view, .tic-tac-toe-view, .yelpCamp-view, .pomodoro-view, .calculator-view, .twitch-view, .wiki-view, .weather-view, .random-view, .moy-view, .tribute-view, .bakery-view').hide();
     // Simon Details View
     $('.simon-back').click(function () {
         $('.simon-view, .projects-view').fadeToggle('900', 'swing');
+    });
+    // 30 Sites in 30 Days Details View
+    $('.30-sites-30-days-back').click(function () {
+        $('.30-sites-30-days-view, .projects-view').fadeToggle('900', 'swing');
     });
     // YelpCamp Details View
     $('.yelpCamp-back').click(function () {
