@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(90, 148, 92);
+  color: white;s
+}
+
+.top-wrapper {
+  background-color: rgb(186, 78, 63);
+  color: white;
+}
+
+.chichenItza {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+/*About*/
+.img  {
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  font-size: 15px;
+}
+
+/*MISC*/
+.content-pad {
+  padding: 30px;
+  text-align: justify;
+  background-color: #fff;
+  color: black;
+}
+
+.content-section-a {
+  background-color: white;
+  color: black;
+  padding: 30px;
+}
+
+.thumbnail {
+  box-shadow: 10px 10px 15px black;
+  margin-bottom: 20px;
+}
