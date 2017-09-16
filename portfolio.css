@@ -99,7 +99,7 @@ html {
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 50px;
+  padding: 10px;
 }
 
 #drew-img {
@@ -107,6 +107,15 @@ html {
   box-shadow: 5px 5px 25px rgb(18, 18, 18);
   transform:rotate(5deg);
   margin-top: 50px;
+}
+
+.group-photos {
+  padding-top: 20px;
+}
+
+#about-img-2 {
+  transform:rotate(-2deg);
+  box-shadow: 5px 5px 25px rgb(18, 18, 18);
 }
 
 .about .container {
@@ -126,15 +135,12 @@ html {
   padding: 50px;
 }
 
-.artwork {
-  max-width: 250px;
-}
-
 /*CONTACT*/
 .contact {
     background-color: #274a82;
     color: #fff;
     min-height: 300px;
+    padding: 50px;
 }
 
 .social-links {
