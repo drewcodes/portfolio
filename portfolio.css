@@ -1,315 +1,149 @@
+/*General Stylings*/
 body {
-    padding-top: 50px;
-    font-family: Muli, Verdana, Arial;
-    background: #578eb7;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+  font-family: Abel;
+  padding-top: 50px;
+  font-size: 17px;
 }
 
-.font-fjalla {
-    font-family: 'Fjalla One';
+a, a:active, a:link, a:hover, a:focus a:visited {
+  color: #fff;
+  text-decoration: none;
 }
 
-
-/*Nav Styling*/
-
+/*Navbar*/
 .navbar {
-    background-color: transparent;
-    color: white;
-    border-style: none;
-    transition: all 1s ease-out;
+  border-bottom: 1px solid rgb(120, 120, 120);
+  background-color: white;
 }
 
-.navbar.fade-in {
-    background-color: #578eb7;
-    color: white;
-    border-style: none;
+#nav-logo {
+  height: 30px;
+  margin-top: -5px;
 }
 
-.navbar-default .navbar-nav > li > a {
-    background-color: inherit;
-    color: white;
+#menu-bars {
+  color: #274a82;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
+/*Toggle Stylings*/
+.highlight {
+    background: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #fff;
+    color: #274a82;
+}
+
 .navbar-default .navbar-nav > li > a:focus {
-    background-color: transparent;
-    color: white;
+    background-color: #fff;
+    color: #274a82;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: inherit;
+    background-color: #fff;
+  }
+
+/*Prevents Navbar Content Blocking*/
+  *[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -50px;
+  height: 50px;
+  visibility: hidden;
 }
 
-#nav-logo {
-    margin-left: 10px;
-    color: white;
-    font-family: 'Abel';
-}
-
-.nav-logo {
-    height: 20px;
-    float: left;
-}
-
-
-/*Media Queries*/
-
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav > li > a {
-        background-color: rgba(47, 47, 47, 0.36);
-        border: none;
-        color: white;
-        text-shadow: 5px 5px 10px black;
-    }
-    .navbar-default .navbar-nav > li > a:hover,
-    .navbar-default .navbar-nav > li > a:focus {
-        background-color: rgba(47, 47, 47, 0.67);
-        color: white;
-        text-shadow: 5px 5px 10px black;
-    }
-    .navbar-default .navbar-toggle:hover,
-    .navbar-default .navbar-toggle:focus {
-        background-color: inherit;
-    }
+#skills {
+  padding: 15px;
 }
 
 
-/*Welcome Message Section*/
-
-.jumbotron {
-    height: 50vh;
-    background: rgba(255, 255, 255, 0);
-    margin-top: -50px;
-    color: white;
-    text-shadow: 3px 3px 10px black;
-    margin-bottom: 0;
+/*HERO*/
+#hero {
+  background: url('/Users/dk/Desktop/Coding Stuff/Active Coding Projects/drewcodes WP/assets/img/drewsdesk1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  padding: 15px 25px 15px 15px;
+  height: 500px;
+  margin-top: -50px;
 }
 
-.welcome-msg {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Abel';
+html {
+  height: 100%;
 }
 
-.random-facts {
-    font-size: 15px;
+.hello {
+  padding: 15px;
+  margin-top: 110px;
 }
 
-#name {
-    text-transform: uppercase;
+#top-name {
+  text-transform: uppercase;
 }
 
-
-/*About*/
-
-.about {
-    height: 100%;
-    padding: 25px;
-    background-color: #45698d;
-    color: white;
-}
-
-.about-section {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    width: 100%;
-}
-
-#about-img {
-    border-radius: 50%;
-    max-width: 300px;
-    border: 5px solid white;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/*Skills Section*/
-
-.demo {
-    margin: 15px;
-}
-
-.skills {
-    padding: 20px;
-    background-color: #45698d;
-}
-
-.skills-chart {
-    background-color: transparent;
-    padding: 20px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.skill-bar {
-    height: 20px;
-    width: 100%;
-    background-color: #ededed;
-    border-radius: 20px;
-}
-
-.level {
-    height: 100%;
-    width: 0%;
-    border-radius: 20px;
-    background-color: #edb943;
-}
-
-#code-skills.code-skills {
-    width: 95%;
-    transition: all 2s ease-out;
-}
-
-#design.design {
-    width: 80%;
-    transition: all 2s ease-out;
-}
-
-#guitar.guitar {
-    width: 95%;
-    transition: all 2s ease-out;
-}
-
-#dancing.dancing {
-    width: 30%;
-    transition: all 2s ease-out;
-}
-
-#sci-fi.sci-fi {
-    width: 95%;
-    transition: all 2s ease-out;
-}
-
-.level-number {
-    color: white;
-    margin-left: 10px;
-}
-
-.skill-list {
-    text-align: center;
-    margin-top: 55px;
-    font-size: 20px;
-    color: white;
-}
-
-
-/*Portfolio Section*/
-
-.back-button {
-    color: black;
-    margin: 15px;
-}
-
+/*PORTFOLIO*/
 .portfolio {
-    padding: 25px;
-    color: white;
-    background: rgba(0, 0, 0, 0.09);
+  margin-bottom: 50px;
 }
 
-.project-img {
-    display: inline-table;
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 12px;
-    border: 2px solid #e6e6e6;
+.project-section {
+  margin-left: 50px;
 }
 
-#languages {
-    font-size: 18px;
+/*ABOUT*/
+.about {
+  background: url("/Users/dk/Desktop/Coding Stuff/Active Coding Projects/drewcodes WP/assets/img/drewsdeskbw.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px;
 }
 
+#drew-img {
+  max-width: 80%;
+  box-shadow: 5px 5px 25px rgb(18, 18, 18);
+  transform:rotate(5deg);
+  margin-top: 50px;
+}
 
-/*Contact Section*/
+.about .container {
+    background: rgba(39, 74, 130, 0.7);
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px black;
+    width: 95%;
+}
 
+.about-text {
+  padding: 20px 0px 20px 0px;
+}
+
+/*ART*/
+.art {
+  padding: 50px;
+}
+
+.artwork {
+  max-width: 250px;
+}
+
+/*CONTACT*/
 .contact {
-    padding: 25px;
-    background-color: #45698d;
-    color: white;
-}
-
-.contact-content {
-    padding: 20px;
-    color: white;
-    padding-bottom: 50px;
-    /*Bottom padding of the site*/
-}
-
-.email-contact > a {
-    color: white;
-    text-decoration: none;
+    background-color: #274a82;
+    color: #fff;
+    min-height: 300px;
 }
 
 .social-links {
     list-style: none;
     font-size: 20px;
     display: inline-flex;
-    color: white;
-    margin-left: -50px;
+    padding: 15px;
 }
 
-#phone {
-    color: white;
-}
-
-.social-links li {
-    margin: 10px;
-}
-
-.social-links li a {
-    color: white;
-    text-decoration: none;
-}
-
-.social-links li a:hover {
-    color: white;
-    text-decoration: none;
-}
-
-
-/*MISC Styling*/
-
-.section-padding {
-    margin-top: -50px;
-    padding-top: 50px;
-}
-
-.language-list > li {
-    list-style: none;
-    font-size: 20px;
-}
-
-#code-icons {
-    width: 300px;
-}
-
-
-/*Misc Font Stylings*/
-
-.fjalla {
-    font-family: 'Fjalla One';
-}
-
-.blue-text {
-    color: #00b0ff;
-}
-
-#contact-icons {
-    width: 270px;
-    padding-left: 10px;
+.social-links > li {
+  margin: 0px 10px 0px 10px;
 }
