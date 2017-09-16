@@ -1,11 +1,12 @@
 $(document).ready(function(){
 
-  // Location from the browser
-  if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function(position) {
+  // Location request
+  var locationAPI = "http://ip-api.com/json";
 
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
+  $.getJSON(locationAPI, function (myLocation){
+
+    var lon = myLocation.lon;
+    var lat = myLocation.lat;
 
     // Modified API url with var's inserted and concatenated
     var api = "https://fcc-weather-api.glitch.me/api/current?lat="+lat+"&lon="+lon;
@@ -80,8 +81,6 @@ $(document).ready(function(){
 
 
 
-    }); // .getJSON Call
-
+    }); // .getJSON Call for weather data
+  }); // .getJSON Call for locationAPI
   });
-} // if statement for navigator.geolocation
-}); // document.ready
