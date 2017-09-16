@@ -1,47 +1,49 @@
 body {
-  background-size: cover;
-  background-color: black;
-  color: white;
-  font-family: Verdana;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  background-color: rgb(236, 233, 219);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  text-shadow: 0px 0px 10px #000;
+  font-size: 20px;
 }
 
-p {
-  font-size: 12px;
+.app {
+  background-color: rgb(158, 172, 139);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  max-width: 600px;
+  border-radius: 10px;
+  border: 5px solid white;
+  box-shadow: 10px 10px 15px #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tempToggle {
+  margin: 10px;
+  background-color: rgb(178, 184, 164);
+  border: 1px solid #fff;
+}
+
+#image {
+    height: 450px;
 }
 
 .weather-details {
-  font-size: 15px;
+  margin: 50px;
 }
 
-.location {
-  height: 75px;
-  font-size: 30px;
-  font-family: Helvetica;
+#temp {
+  font-size: 60px;
 }
 
-.weatherbox {
-  background-color: rgba(179, 0, 0, 0.55);
-  height: 550px;
-  max-width: 475px;
-  border-radius: 10px;
-    margin: auto;
-  font-size: 15px;
-  padding: 20px;
-    display: block;
+footer {
+  margin: 15px;
 }
 
-.weatherType {
-  height: 50px;
-  width: 100px;
-}
-
-.temp-info{
-  background-color: white;
-  height: 100px;
-  color: black;
-  padding: 20px;
-  font-size: 35px;
-  font-family: Avenir;
+a, a:active, a:hover, a::selection, a:focus {
+  color: white;
+  text-decoration: none;
 }
