@@ -1,0 +1,141 @@
+/*General Stylings*/
+body {
+  font-family: Abel;
+  padding-top: 50px;
+  font-size: 17px;
+}
+
+a, a:active, a:link, a:hover, a:focus a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Navbar*/
+.navbar {
+  border-bottom: 1px solid rgb(120, 120, 120);
+  background-color: white;
+}
+
+#nav-logo {
+  height: 30px;
+  margin-top: -5px;
+}
+
+#menu-bars {
+  color: #274a82;
+}
+
+/*Toggle Stylings*/
+.highlight {
+    background: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #fff;
+    color: #274a82;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: #fff;
+    color: #274a82;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+  }
+
+/*Prevents Navbar Content Blocking*/
+  *[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -50px;
+  height: 50px;
+  visibility: hidden;
+}
+
+
+/*HERO*/
+#hero {
+  background: url('/Users/dk/Desktop/Coding Stuff/Active Coding Projects/drewcodes WP/assets/img/drewsdesk1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  padding: 15px 25px 15px 15px;
+  height: 500px;
+  margin-top: -50px;
+}
+
+html {
+  height: 100%;
+}
+
+.hello {
+  padding: 15px;
+  margin-top: 110px;
+}
+
+#top-name {
+  text-transform: uppercase;
+}
+
+/*PORTFOLIO*/
+.portfolio {
+  margin-bottom: 50px;
+}
+
+.project-section {
+  margin-left: 50px;
+}
+
+/*ABOUT*/
+.about {
+  background: url("/Users/dk/Desktop/Coding Stuff/Active Coding Projects/drewcodes WP/assets/img/drewsdeskbw.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px;
+}
+
+#drew-img {
+  max-width: 80%;
+  box-shadow: 5px 5px 25px rgb(18, 18, 18);
+  transform:rotate(5deg);
+  margin-top: 50px;
+}
+
+.about .container {
+    background: rgba(39, 74, 130, 0.7);
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px black;
+    width: 95%;
+}
+
+.about-text {
+  padding: 20px 0px 20px 0px;
+}
+
+/*ART*/
+.art {
+  padding: 50px;
+}
+
+/*CONTACT*/
+.contact {
+    background-color: #274a82;
+    color: #fff;
+    min-height: 300px;
+}
+
+.social-links {
+    list-style: none;
+    font-size: 20px;
+    display: inline-flex;
+    padding: 15px;
+}
+
+.social-links > li {
+  margin: 0px 10px 0px 10px;
+}
