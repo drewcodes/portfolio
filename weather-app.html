@@ -1,66 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!--Meta-->
-    <!--<meta name="theme-color" content="#" />-->
-    <meta property="og:image" content="https://lh3.googleusercontent.com/D7ZRzi77jEPHfuNfUr1x4q0JSI9Www9gN9OCovyhq4hF74sduOK2gVDoRL5Q95aAa43CF0z_qNxUcKMsP_5yjOgWHmXnpzgU0LdhKDaoy0-bgBvHLnr1K-HQDaSYr_Ro7ydiUhrKL9kwaqlprjMINnNa5lLI5jAgBsfaDu2899BBZRRzN3taDj-vaf5g4Ty1xqBHC9rCZ_5uzgdN5XSz8pU6g6OvNNong3gcxsXkH8YUhbca5ipCRYpwP4V8WggoEyki-14pdowbESG9jDTHVaij32_sZwGHFLPoalJZEm8hoUNgKm0KtR_K8t5vEovBN4HL9FM5Y1VcOBZO0xGBf4azwcBXNeNVvngpAL_V8Q3G6vuyzVy72XusKbUB--xNI_qosPnba8onNbgrFUm6j_sz0rAyRYOjVzlY5YLHAtwNTYYCfTvdTJamtrk2YEjpmMuW6rXX073htnVg-4B1NPSTFcwYDY7QJxG7m2ghxJC5GQQ7cdMITz5e5m_Q98HPLoROs9u4nv8iSHfs8uc9B-N72hcjtjHvGKB3M8kM6hSZBMK6q0dtIIkJ--P9EYeZ9peXQw0_4crdDFKztUIN3lzI0S0XowY=s72-no?.png" />
-    <meta property="og:description" content="drewcodes: Front End Developer" />
-    <meta property="og:url" content="http://www.drewcodes.io/" />
-    <meta property="og:title" content="drewcodes: Front End Developer" />
-    <!--Favicon-->
-    <!-- for FF, Chrome, Opera -->
-    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/Mbx9njNkucUY7fA1VtYWio-m4jq3kU5Q8Dn2NI5R8Zz3oS0yaoHXXmZTtGWJgSgpuBfxNSlclrpul_79iJHvgyW20jEwFuQd4dLu8a5CqS86uyne4lZOi-bC-kxSEk5AbgVXNrh37o3WFUMR0s4Cc1nyxeO45lPNVs2J4Dk40H1VD3ucKoQp7KBpP_ToQ1YD8sC34FhR72tMPXAVZHu6E75vjnWs-dwI35cqtJ29_uPH89U-KlqE85kWayBOnU3BPIDZxhd33dzkJwqXscsGYVHHDZwIO0J6yJbO-sxOmPYuDTACvoFWcOHcP3DgMaxqaiAXshYIyspretf1hNMxCfZde9-TOTb1NjRdxsZF9diX7npGHRO9iNuky2TQ5pL-bx4w6PS-_Rsl1WpWz4YHRJHCNneIPU48PzqmasDokVbL1nH0IX511PnjM1NAJgp6Wc7bfgdF1HbVy12p079nSZjpfhDVWIF3z1S4zCdhrmHBRdTWrSQDBxEuTAVSB6XpHrR8V0pF4zEolmFWOud7IvpkUAA7gknr_5mcUTxLnfO8NOmhJJ-4xMjrm2oKFh868StDjCyNhBp_3UUYh8sEkyihJmpTkQ5H0vrg98kct3LwHErS=s72-no?.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
-    <!--Char and Device Viewport Settings-->
+  <!DOCTYPE html>
+<html>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <!--Link for CSS-->
-    <link rel="stylesheet" type="text/css" href="weather.css">
-    <title>weatherApp - drewcodes.io</title>
-</head>
+    <!-- CDNs and File Links -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="weatherapp.css">
+    <title>drewcodes.io - Weather App v2</title>
+  </head>
+  <body>
 
-<body>
-    <div class="container-fluid">
-        <div class="weatherbox">
-            <h2 class="app-name text-center">Local Weather</h2>
-            <br>
-            <!--Current Location-->
-            <div class="location text-center">
-                <h5>Your Location:</h5>
-                <div id="city" class="city-info">
-                    <!--Location Info Will Appear Here on Screen-->
-                </div>
-            </div>
-            <!--Temperature Box-->
-            <div class="temp text-center">
-                <h5>Temperature:</h5>
-                <div id="tempNow" class="temp-info text-center">
-                    <!--Temp will show here-->
-                </div>
-                <br>
-                <button id="tempToggle" class="btn btn-primary">&#176; f / &#176; c</button>
-            </div>
-            <br>
-            <!--Weather Type-->
-            <div id="weatherType" class="weather-details text-center">
-                <!--Weather Type will show here-->
-            </div>
-            <!--Wind Speed-->
-            <div id="windSpeed" class="weather-details text-center">
-                <!--Wind Speed will show here-->
-            </div>
-            <!--Humidity-->
-            <div id="humidity" class="weather-details text-center">
-                <!--Humidity will show here-->
-            </div>
-        </div>
-    </div>
-    <footer class="text-center">Coded by <a href="http://www.drewcodes.io">drewcodes</a></footer>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="weather.js"></script>
+    <div class="app text-center">
 
+      <h1 id="city">Weather is Loading...</h1>
+      <h3 id="date"></h3>
+
+      <div class="weather-details">
+        <span id="image"></span>
+        <h1 id="temp">--</h1>
+        <button id="tempToggle" class="btn btn-primary">&#176; f / &#176; c</button>
+          <p id='humidity'></p>
+          <p id='windSpeed'></p>
+          <p id='tempHigh'></p>
+          <p id='tempLow'></p>
+      </div><!--weather-details-->
+    </div><!--app-->
+<footer class="text-center">Code by <a href="http://www.drewcodes.io" target="_blank">Andrew Kao</a>.</footer>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="weatherapp.js"></script>
+
+  </body>
 </html>
