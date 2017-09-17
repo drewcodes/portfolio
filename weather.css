@@ -1,11 +1,13 @@
 body {
   background-color: rgb(236, 233, 219);
-  margin-top: 40px;
-  margin-bottom: 40px;
   color: #fff;
   font-family: 'Nunito', sans-serif;
   text-shadow: 0px 0px 10px #000;
   font-size: 20px;
+}
+
+.outer-container {
+    margin: 10px;
 }
 
 .app {
