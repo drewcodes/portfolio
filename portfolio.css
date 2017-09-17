@@ -61,7 +61,7 @@ a, a:active, a:link, a:hover, a:focus a:visited {
 
 /*HERO*/
 #hero {
-  background: url('/Users/dk/Desktop/Coding Stuff/Active Coding Projects/drewcodes WP/assets/img/drewsdesk1.jpg');
+  background: url('https://lh3.googleusercontent.com/4JRr0lr5d9odhs-aXVYinTKTQ7SM59UFKONUADnCJM0dgDvrV0wF2rSvDJiWdRU_reqnQDJIwrqe78UJseZMUTaeTv28Ehd-04LOGjG6d05tYdoa325Y3dKsHBwmWnFwtrTCQnBCQKRkrIumBF0yqk2Vj4sfaYdPwI8fVWa4mj6gVlTE9pm4pGrUHTAM-SbA4DD45y4ETVpFa_9rXCpCSf6WWv9BdtmjF9xNE4hLbPyHsWh7P_Z7hCtJy4biHRC9m2tVjFR__ajYpW3rNkAiMQ8ZaRCFkYAAqQQtOm7GHGfdiSekXzC4uN7KlacO5go9-AKyrPxvhvRFBk4IPdclrYyPDf5G9k3KdmXUnqtKmlqFFZyGX-wbHfm2zIfkjInV-0kAzKvXv9QMBa4Tl5N82SD48aTNB-TkANSEqLvHi-QHmrQ2GKriZjy2AyuPXnedqdyjRXLBdcAw_U5uWQ4AMJJ3bHfnL713sW6uwMofSU7Mt_ihkS9E7PcpdwbugXc97xZo3CQh6BRgDb65KGAMzp9drMYUwS4M_Lf2hmGQQd1cJHwRYuZPca1MK_exxa9-NO7sIfZDmpkicBTRabbcQ47td536ssDPaWnxDtQHt7TurXMxEboDk7qrq4e_f5v3NlX9ytycJoXdkwu31ospPgfwzcOfbcIeT_c=w1280-h684-no?.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -95,7 +95,7 @@ html {
 
 /*ABOUT*/
 .about {
-  background: url("/Users/dk/Desktop/Coding Stuff/Active Coding Projects/drewcodes WP/assets/img/drewsdeskbw.jpg");
+  background: url('https://lh3.googleusercontent.com/W7fOUkic8bSmHS1C-vrEPwKog9ONfzPtXX30lZXyj8rp2BhvMoFHc00t6vDgdTYgOoVXzghe9FMHjBt4N2595p8uSjtM7bnW4hp05Ba25jk8ox68bfGC4K-eAzUy6NvkaiCmIHRuGOlHoJS5-Vix7ZFFixpTjTjBObXFb5877Id05EO_KMTNi91xVJ4seBLaMLV0-H0JedOfS7h7RaaEFX9OmSKWU3cd9scOOMBZ1uRJqNeWifKHm0hKs5bTQRq-vpvfXGVuFEG3SpGR6sORzv1-GwyvCS6dxRyj8X-665E95YFR7FL3omurh4DeLtwBoZtgZq5eyk2eAoox5MJk3hrCpL6VY_yDyLA6KHViYojeCPWF9pBeec5MqXubo9PXHXdeDo2qXzKIDgniwB_XEEb6ld29Ij9VkTLvsPhL_EypSAjc9zbEHzrrHtzzZV3VirfatoJozQWLw-lenRJmc335zp00AXzNQfJK7IPz23i4zZ4HyvwAgjZAEUEmCb25bY4VPYRnq2y-rUPKiK2Nh-uRk72X30rNIhdLVvmMFWefsaB0Y7DWtUwnd7_1IuPxwBEP_91u4kkUkKff8u5dOijAPqOtXV4kUHMogb8eHZQxHORk6GXQquJSRcdWZ6OEI4CR07SAL1Qfb1gT_Z-CF6XzfN52osDm2s8=w1075-h726-no?.jpg');
   background-size: cover;
   background-position: center;
   color: white;
